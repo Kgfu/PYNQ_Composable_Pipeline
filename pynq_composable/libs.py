@@ -723,7 +723,7 @@ class MultiplyIP(VitisVisionIP):
 #Willy add - s
 class Gaussianfilter(VitisVisionIP):
     """Gaussian Filter, using gaussianfilter algorithm IP, python driver"""
-    bindto = ['xilinx.com:hls:gaussianfilter_accel:1.0] 
+    bindto = ['xilinx.com:hls:gaussianfilter_accel:1.0'] 
 
     def __init__(self, description):
         super().__init__(description=description)
