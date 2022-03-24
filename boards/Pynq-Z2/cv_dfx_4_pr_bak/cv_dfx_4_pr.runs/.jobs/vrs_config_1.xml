@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="composable_pr_0_dilate_erode_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_dilate_erode_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_0_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_erode_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_fast_fifo_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_fast_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_filter2d_fifo_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_filter2d_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_0_filter2d_fifo_filter2d_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_axis_data_fifo_1_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_1_dilate_erode_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_dilate_erode_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_1_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_erode_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_1_cornerharris_fifo_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_cornerharris_fifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_1_cornerharris_fifo_cornerHarris_accel_0_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_join_subtract_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_subtract_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_join_subtract_subtract_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_join_absdiff_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_absdiff_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_join_absdiff_absdiff_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_join_add_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_join_add_add_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_join_bitand_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_bitand_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_join_bitand_bitwise_and_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_fork_duplicate_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_fork_duplicate_duplicate_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_fork_rgb2xyz_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_rgb2xyz_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_fork_rgb2xyz_rgb2xyz_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_join_subtract_subtract_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_subtract_subtract_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_s00_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_s00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_pc_4_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_m00_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m00_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_m01_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m01_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_m02_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m02_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_1_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_m03_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m03_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_m04_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m04_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_m05_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m05_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_m06_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m06_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m02_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_2_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+	</Run>
+	<Run Id="video_cp_m07_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m07_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m01_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_3_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_m08_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m08_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_m09_regslice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_m09_regslice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_4_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+	</Run>
+	<Run Id="video_cp_btns_gpio_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_btns_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_dwidth_24_48_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_dwidth_24_48_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_dwidth_48_24_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_dwidth_48_24_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_fifo_hdmi_out_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_fifo_hdmi_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_switch_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_colorthresholding_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_dfx_decoupler_pr_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_dfx_decoupler_pr_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_5_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_6_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_6_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_7_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_7_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_8_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_9_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_9_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_10_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_11_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_11_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_12_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_cc_13_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_13_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_14_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_14_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_15_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_15_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_16_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_16_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_cc_17_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_cc_17_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_us_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_pc_5_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_5_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_1_dilate_erode_dilate_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_dilate_erode_dilate_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_join_add_add_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_join_bitand_bitwise_and_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_bitand_bitwise_and_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_join_absdiff_absdiff_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_absdiff_absdiff_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_tier2_xbar_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_tier2_xbar_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_pc_2_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_pc_3_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="video_cp_tier2_xbar_1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_tier2_xbar_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_tier2_xbar_3_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_tier2_xbar_3_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_tier2_xbar_2_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_tier2_xbar_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_auto_pc_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="video_cp_auto_pc_1_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_1_dilate_erode_erode_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_dilate_erode_erode_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_xbar_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_ps_user_soft_reset_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_ps_user_soft_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_rgb2gray_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2gray_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_rgb2hsv_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_leds_gpio_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_leds_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axi_gpio_hdmiin_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axi_gpio_hdmiin_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axi_vdma_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axi_vdma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_register_slice_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_register_slice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_color_convert_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_ps7_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_ps7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_rst_ps7_0_fclk0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rst_ps7_0_fclk0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_rst_ps7_0_fclk1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rst_ps7_0_fclk1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_switches_gpio_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_switches_gpio_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_system_interrupts_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_system_interrupts_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_xbar_1_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pr_join_in1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_join_in1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pr_join_out0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_join_out0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_filter2d_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_filter2d_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_gray2rgb_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_gray2rgb_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_lut_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_lut_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pipeline_control_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pipeline_control_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_dfx_decoupler_pr_1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_dfx_decoupler_pr_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_dfx_decoupler_pr_fork_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_dfx_decoupler_pr_fork_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_dfx_decoupler_pr_join_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_dfx_decoupler_pr_join_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pr_0_in0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_0_in0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_0_in1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_0_in1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_0_out0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_0_out0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_0_out1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_0_out1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_1_in0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_1_in0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_1_in1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_1_in1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_1_out0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_1_out0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_1_out1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_1_out1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_fork_in0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_fork_in0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_fork_out0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_fork_out0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_fork_out1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_fork_out1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_join_fifo_in_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_join_fifo_in_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pr_join_fifo_in_1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_join_fifo_in_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_fifo_in_0_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_pr_join_in0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pr_join_in0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_color_swap_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_swap_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_dvi2rgb_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_dvi2rgb_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_v_vid_in_axi4s_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_v_vid_in_axi4s_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_vtc_in_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_vtc_in_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pixel_pack_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pixel_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_axis_register_slice_1_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_register_slice_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_axis_register_slice_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_color_convert_1_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_color_convert_0_synth_1"/>
+	</Run>
+	<Run Id="video_cp_axi_dynclk_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axi_dynclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_hdmi_out_hpd_video_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_hdmi_out_hpd_video_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_hdmi_tx_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_hdmi_tx_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_v_axi4s_vid_out_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_v_axi4s_vid_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_vtc_out_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_vtc_out_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_pixel_unpack_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_pixel_unpack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="video_cp_proc_sys_reset_pixelclk_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_proc_sys_reset_pixelclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_rst_ps7_0_fclk0_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_dilate_erode_dilate_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_dilate_erode_dilate_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="composable_pr_1_dilate_erode_dilate_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_dilate_erode_erode_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_dilate_erode_erode_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="composable_pr_1_dilate_erode_erode_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_fast_fifo_fast_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_0_filter2d_fifo_filter2d_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_filter2d_fifo_filter2d_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="video_cp_filter2d_accel_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_0_filter2d_fifo_axis_data_fifo_1_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_filter2d_fifo_axis_data_fifo_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_1_cornerharris_fifo_cornerHarris_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_cornerharris_fifo_cornerHarris_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1"/>
+	</Run>
+	<Run Id="composable_pr_fork_duplicate_duplicate_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="composable_pr_fork_rgb2xyz_rgb2xyz_accel_0_synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_rgb2xyz_rgb2xyz_accel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="composable_pr_0_dilate_erode_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_synth_1"/>
+		<Parent Id="composable_pr_join_subtract_synth_1"/>
+		<Parent Id="composable_pr_join_absdiff_synth_1"/>
+		<Parent Id="composable_pr_join_add_synth_1"/>
+		<Parent Id="composable_pr_join_bitand_synth_1"/>
+		<Parent Id="composable_pr_fork_duplicate_synth_1"/>
+		<Parent Id="composable_pr_fork_rgb2xyz_synth_1"/>
+		<Parent Id="composable_pr_join_subtract_subtract_accel_0_synth_1"/>
+		<Parent Id="video_cp_s00_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_4_synth_1"/>
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m01_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+		<Parent Id="video_cp_m02_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+		<Parent Id="video_cp_m03_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m04_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m05_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m06_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_2_synth_1"/>
+		<Parent Id="video_cp_m07_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_3_synth_1"/>
+		<Parent Id="video_cp_m08_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m09_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_4_synth_1"/>
+		<Parent Id="video_cp_btns_gpio_0_synth_1"/>
+		<Parent Id="video_cp_axis_dwidth_24_48_0_synth_1"/>
+		<Parent Id="video_cp_axis_dwidth_48_24_0_synth_1"/>
+		<Parent Id="video_cp_axis_fifo_hdmi_out_0_synth_1"/>
+		<Parent Id="video_cp_axis_switch_0_synth_1"/>
+		<Parent Id="video_cp_colorthresholding_accel_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_0_0_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_5_synth_1"/>
+		<Parent Id="video_cp_auto_cc_6_synth_1"/>
+		<Parent Id="video_cp_auto_cc_7_synth_1"/>
+		<Parent Id="video_cp_auto_cc_8_synth_1"/>
+		<Parent Id="video_cp_auto_cc_9_synth_1"/>
+		<Parent Id="video_cp_auto_cc_10_synth_1"/>
+		<Parent Id="video_cp_auto_cc_11_synth_1"/>
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+		<Parent Id="video_cp_auto_cc_13_synth_1"/>
+		<Parent Id="video_cp_auto_cc_14_synth_1"/>
+		<Parent Id="video_cp_auto_cc_15_synth_1"/>
+		<Parent Id="video_cp_auto_cc_16_synth_1"/>
+		<Parent Id="video_cp_auto_cc_17_synth_1"/>
+		<Parent Id="video_cp_auto_us_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_5_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_add_add_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_bitand_bitwise_and_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_absdiff_absdiff_accel_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_0_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_2_synth_1"/>
+		<Parent Id="video_cp_auto_pc_3_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_1_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_3_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_2_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_1_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_erode_accel_0_synth_1"/>
+		<Parent Id="video_cp_xbar_0_synth_1"/>
+		<Parent Id="video_cp_ps_user_soft_reset_0_synth_1"/>
+		<Parent Id="video_cp_rgb2gray_accel_0_synth_1"/>
+		<Parent Id="video_cp_rgb2hsv_accel_0_synth_1"/>
+		<Parent Id="video_cp_leds_gpio_0_synth_1"/>
+		<Parent Id="video_cp_axi_gpio_hdmiin_0_synth_1"/>
+		<Parent Id="video_cp_axi_vdma_0_synth_1"/>
+		<Parent Id="video_cp_axis_register_slice_0_synth_1"/>
+		<Parent Id="video_cp_color_convert_0_synth_1"/>
+		<Parent Id="video_cp_ps7_0_0_synth_1"/>
+		<Parent Id="video_cp_rst_ps7_0_fclk0_0_synth_1"/>
+		<Parent Id="video_cp_rst_ps7_0_fclk1_0_synth_1"/>
+		<Parent Id="video_cp_switches_gpio_0_synth_1"/>
+		<Parent Id="video_cp_system_interrupts_0_synth_1"/>
+		<Parent Id="video_cp_xbar_1_synth_1"/>
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+		<Parent Id="video_cp_filter2d_accel_0_synth_1"/>
+		<Parent Id="video_cp_gray2rgb_accel_0_synth_1"/>
+		<Parent Id="video_cp_lut_accel_0_synth_1"/>
+		<Parent Id="video_cp_pipeline_control_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_1_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_fork_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_join_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_fifo_in_0_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_fifo_in_1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_in0_0_synth_1"/>
+		<Parent Id="video_cp_color_swap_0_synth_1"/>
+		<Parent Id="video_cp_dvi2rgb_0_synth_1"/>
+		<Parent Id="video_cp_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="video_cp_vtc_in_0_synth_1"/>
+		<Parent Id="video_cp_pixel_pack_0_synth_1"/>
+		<Parent Id="video_cp_axis_register_slice_1_synth_1"/>
+		<Parent Id="video_cp_color_convert_1_synth_1"/>
+		<Parent Id="video_cp_axi_dynclk_0_synth_1"/>
+		<Parent Id="video_cp_hdmi_out_hpd_video_0_synth_1"/>
+		<Parent Id="video_cp_hdmi_tx_0_synth_1"/>
+		<Parent Id="video_cp_v_axi4s_vid_out_0_synth_1"/>
+		<Parent Id="video_cp_vtc_out_0_synth_1"/>
+		<Parent Id="video_cp_pixel_unpack_0_synth_1"/>
+		<Parent Id="video_cp_proc_sys_reset_pixelclk_0_synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_erode_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_fast_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_filter2d_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_axis_data_fifo_1_0_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_cornerHarris_accel_0_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="composable_pr_fork_duplicate_duplicate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_fork_rgb2xyz_rgb2xyz_accel_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_synth_1"/>
+		<Parent Id="composable_pr_join_subtract_synth_1"/>
+		<Parent Id="composable_pr_join_absdiff_synth_1"/>
+		<Parent Id="composable_pr_join_add_synth_1"/>
+		<Parent Id="composable_pr_join_bitand_synth_1"/>
+		<Parent Id="composable_pr_fork_duplicate_synth_1"/>
+		<Parent Id="composable_pr_fork_rgb2xyz_synth_1"/>
+		<Parent Id="composable_pr_join_subtract_subtract_accel_0_synth_1"/>
+		<Parent Id="video_cp_s00_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_4_synth_1"/>
+		<Parent Id="video_cp_m00_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m01_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_0_synth_1"/>
+		<Parent Id="video_cp_m02_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_1_synth_1"/>
+		<Parent Id="video_cp_m03_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m04_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m05_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m06_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_2_synth_1"/>
+		<Parent Id="video_cp_m07_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_3_synth_1"/>
+		<Parent Id="video_cp_m08_regslice_0_synth_1"/>
+		<Parent Id="video_cp_m09_regslice_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_4_synth_1"/>
+		<Parent Id="video_cp_btns_gpio_0_synth_1"/>
+		<Parent Id="video_cp_axis_dwidth_24_48_0_synth_1"/>
+		<Parent Id="video_cp_axis_dwidth_48_24_0_synth_1"/>
+		<Parent Id="video_cp_axis_fifo_hdmi_out_0_synth_1"/>
+		<Parent Id="video_cp_axis_switch_0_synth_1"/>
+		<Parent Id="video_cp_colorthresholding_accel_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_0_0_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="video_cp_auto_cc_5_synth_1"/>
+		<Parent Id="video_cp_auto_cc_6_synth_1"/>
+		<Parent Id="video_cp_auto_cc_7_synth_1"/>
+		<Parent Id="video_cp_auto_cc_8_synth_1"/>
+		<Parent Id="video_cp_auto_cc_9_synth_1"/>
+		<Parent Id="video_cp_auto_cc_10_synth_1"/>
+		<Parent Id="video_cp_auto_cc_11_synth_1"/>
+		<Parent Id="video_cp_auto_cc_12_synth_1"/>
+		<Parent Id="video_cp_auto_cc_13_synth_1"/>
+		<Parent Id="video_cp_auto_cc_14_synth_1"/>
+		<Parent Id="video_cp_auto_cc_15_synth_1"/>
+		<Parent Id="video_cp_auto_cc_16_synth_1"/>
+		<Parent Id="video_cp_auto_cc_17_synth_1"/>
+		<Parent Id="video_cp_auto_us_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_5_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_add_add_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_bitand_bitwise_and_accel_0_synth_1"/>
+		<Parent Id="composable_pr_join_absdiff_absdiff_accel_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_0_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_2_synth_1"/>
+		<Parent Id="video_cp_auto_pc_3_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_1_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_3_0_synth_1"/>
+		<Parent Id="video_cp_tier2_xbar_2_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_0_synth_1"/>
+		<Parent Id="video_cp_auto_pc_1_synth_1"/>
+		<Parent Id="composable_pr_1_dilate_erode_erode_accel_0_synth_1"/>
+		<Parent Id="video_cp_xbar_0_synth_1"/>
+		<Parent Id="video_cp_ps_user_soft_reset_0_synth_1"/>
+		<Parent Id="video_cp_rgb2gray_accel_0_synth_1"/>
+		<Parent Id="video_cp_rgb2hsv_accel_0_synth_1"/>
+		<Parent Id="video_cp_leds_gpio_0_synth_1"/>
+		<Parent Id="video_cp_axi_gpio_hdmiin_0_synth_1"/>
+		<Parent Id="video_cp_axi_vdma_0_synth_1"/>
+		<Parent Id="video_cp_axis_register_slice_0_synth_1"/>
+		<Parent Id="video_cp_color_convert_0_synth_1"/>
+		<Parent Id="video_cp_ps7_0_0_synth_1"/>
+		<Parent Id="video_cp_rst_ps7_0_fclk0_0_synth_1"/>
+		<Parent Id="video_cp_rst_ps7_0_fclk1_0_synth_1"/>
+		<Parent Id="video_cp_switches_gpio_0_synth_1"/>
+		<Parent Id="video_cp_system_interrupts_0_synth_1"/>
+		<Parent Id="video_cp_xbar_1_synth_1"/>
+		<Parent Id="video_cp_pr_join_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_out0_0_synth_1"/>
+		<Parent Id="video_cp_filter2d_accel_0_synth_1"/>
+		<Parent Id="video_cp_gray2rgb_accel_0_synth_1"/>
+		<Parent Id="video_cp_lut_accel_0_synth_1"/>
+		<Parent Id="video_cp_pipeline_control_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_1_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_fork_0_synth_1"/>
+		<Parent Id="video_cp_dfx_decoupler_pr_join_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_0_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_in1_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_1_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_in0_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_out0_0_synth_1"/>
+		<Parent Id="video_cp_pr_fork_out1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_fifo_in_0_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_fifo_in_1_0_synth_1"/>
+		<Parent Id="video_cp_pr_join_in0_0_synth_1"/>
+		<Parent Id="video_cp_color_swap_0_synth_1"/>
+		<Parent Id="video_cp_dvi2rgb_0_synth_1"/>
+		<Parent Id="video_cp_v_vid_in_axi4s_0_0_synth_1"/>
+		<Parent Id="video_cp_vtc_in_0_synth_1"/>
+		<Parent Id="video_cp_pixel_pack_0_synth_1"/>
+		<Parent Id="video_cp_axis_register_slice_1_synth_1"/>
+		<Parent Id="video_cp_color_convert_1_synth_1"/>
+		<Parent Id="video_cp_axi_dynclk_0_synth_1"/>
+		<Parent Id="video_cp_hdmi_out_hpd_video_0_synth_1"/>
+		<Parent Id="video_cp_hdmi_tx_0_synth_1"/>
+		<Parent Id="video_cp_v_axi4s_vid_out_0_synth_1"/>
+		<Parent Id="video_cp_vtc_out_0_synth_1"/>
+		<Parent Id="video_cp_pixel_unpack_0_synth_1"/>
+		<Parent Id="video_cp_proc_sys_reset_pixelclk_0_synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_dilate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_dilate_erode_erode_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_fast_fifo_fast_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_filter2d_accel_0_synth_1"/>
+		<Parent Id="composable_pr_0_filter2d_fifo_axis_data_fifo_1_0_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_cornerHarris_accel_0_synth_1"/>
+		<Parent Id="composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0_synth_1"/>
+		<Parent Id="composable_pr_fork_duplicate_duplicate_accel_0_synth_1"/>
+		<Parent Id="composable_pr_fork_rgb2xyz_rgb2xyz_accel_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

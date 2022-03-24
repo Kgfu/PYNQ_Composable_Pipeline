@@ -1,0 +1,582 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:24:24 2022
+# Process ID: 2317288
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1
+# Command line: vivado -log video_cp_axis_switch_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_cp_axis_switch_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/video_cp_axis_switch_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source video_cp_axis_switch_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top video_cp_axis_switch_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2317478
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 8842 ; free virtual = 54619
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'video_cp_axis_switch_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_axis_switch_0/synth/video_cp_axis_switch_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axis_switch' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:3090]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_LOG_SI_SLOTS bound to: 4 - type: integer 
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 147 - type: integer 
+	Parameter C_ARB_ON_MAX_XFERS bound to: 1 - type: integer 
+	Parameter C_ARB_ON_NUM_CYCLES bound to: 0 - type: integer 
+	Parameter C_ARB_ON_TLAST bound to: 0 - type: integer 
+	Parameter C_INCLUDE_ARBITER bound to: 1 - type: integer 
+	Parameter C_ARB_ALGORITHM bound to: 0 - type: integer 
+	Parameter C_OUTPUT_REG bound to: 0 - type: integer 
+	Parameter C_DECODER_REG bound to: 1 - type: integer 
+	Parameter C_M_AXIS_CONNECTIVITY_ARRAY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXIS_BASETDEST_ARRAY bound to: 15'b010101010101010 
+	Parameter C_M_AXIS_HIGHTDEST_ARRAY bound to: 15'b010101010101010 
+	Parameter C_ROUTING_MODE bound to: 1 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_DECODER_CONNECTIVITY_ARRAY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_TPAYLOAD_WIDTH bound to: 26 - type: integer 
+	Parameter P_SINGLE_SLAVE_CONNECTIVITY_ARRAY bound to: 15'b000000000000000 
+	Parameter LP_NUM_SYNCHRONIZER_STAGES bound to: 4 - type: integer 
+	Parameter LP_MERGEDOWN_MUX bound to: 0 - type: integer 
+	Parameter LP_CTRL_REG_WIDTH bound to: 150 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 26 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 147 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 24 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 24 - type: integer 
+	Parameter P_TLAST_INDX bound to: 24 - type: integer 
+	Parameter P_TID_INDX bound to: 25 - type: integer 
+	Parameter P_TDEST_INDX bound to: 25 - type: integer 
+	Parameter P_TUSER_INDX bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axisc_decoder' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:479]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 147 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 26 - type: integer 
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_DECODER_REG bound to: 1 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 15'b111111111111111 
+	Parameter C_BASETDEST bound to: 15'b010101010101010 
+	Parameter C_HIGHTDEST bound to: 15'b010101010101010 
+	Parameter C_ROUTING_MODE bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter TDW bound to: 1 - type: integer 
+	Parameter P_TDEST_PRESENT bound to: 1'b0 
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_22_axisc_register_slice' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/ebcc/hdl/axis_register_slice_v1_1_vl_rfs.v:1936]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 26 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_22_axisc_register_slice' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/ebcc/hdl/axis_register_slice_v1_1_vl_rfs.v:1936]
+WARNING: [Synth 8-7071] port 'ACLK2X' of module 'axis_register_slice_v1_1_22_axisc_register_slice' is unconnected for instance 'inst_decoder_pipeline' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:727]
+WARNING: [Synth 8-7023] instance 'inst_decoder_pipeline' of module 'axis_register_slice_v1_1_22_axisc_register_slice' has 10 connections declared, but only 9 given [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:727]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axisc_decoder' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:479]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axisc_transfer_mux' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:819]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_TPAYLOAD_WIDTH bound to: 26 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 147 - type: integer 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_LOG_SI_SLOTS bound to: 4 - type: integer 
+	Parameter C_ARB_ON_TLAST bound to: 0 - type: integer 
+	Parameter C_ARB_ON_MAX_XFERS bound to: 1 - type: integer 
+	Parameter C_ARB_ON_NUM_CYCLES bound to: 0 - type: integer 
+	Parameter C_OUTPUT_REG bound to: 0 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 15'b111111111111111 
+	Parameter C_SINGLE_SLAVE_CONNECTIVITY bound to: 0 - type: integer 
+	Parameter C_ROUTING_MODE bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_LOG_NUM_SLAVE_SLOTS bound to: 4 - type: integer 
+	Parameter P_FIXED_MUX_VALUE bound to: 15'b000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_22_axisc_register_slice__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/ebcc/hdl/axis_register_slice_v1_1_vl_rfs.v:1936]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 26 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_22_axisc_register_slice__parameterized0' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/ebcc/hdl/axis_register_slice_v1_1_vl_rfs.v:1936]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axisc_transfer_mux' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:819]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 26 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 147 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 24 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 24 - type: integer 
+	Parameter P_TLAST_INDX bound to: 24 - type: integer 
+	Parameter P_TID_INDX bound to: 25 - type: integer 
+	Parameter P_TDEST_INDX bound to: 25 - type: integer 
+	Parameter P_TUSER_INDX bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_clock_synchronizer' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:1173]
+	Parameter C_NUM_STAGES bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (6#1) [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_clock_synchronizer' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:1173]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_cdc_handshake' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:1265]
+	Parameter C_WIDTH bound to: 150 - type: integer 
+	Parameter C_NUM_SYNCHRONIZER_STAGES bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+	Parameter DEST_EXT_HSK bound to: 0 - type: integer 
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_SYNC_FF bound to: 4 - type: integer 
+	Parameter VERSION bound to: 0 - type: integer 
+	Parameter WIDTH bound to: 150 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (8#1) [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:469]
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_cdc_handshake' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:1265]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_static_router' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2786]
+	Parameter C_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_CTRL_REG_WIDTH bound to: 150 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axi_ctrl_top' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2077]
+	Parameter C_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_CTRL_REG_WIDTH bound to: 150 - type: integer 
+	Parameter LP_CTRL_REG_MASK bound to: 2 - type: integer 
+	Parameter LP_CTRL_REG_INIT bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter LP_MI_MUX_REG_MASK bound to: 32783 - type: integer 
+	Parameter LP_MI_MUX_REG_INIT bound to: 512'b10000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000 
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axi_ctrl_read' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:1745]
+	Parameter C_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter SM_IDLE bound to: 2'b00 
+	Parameter SM_READ bound to: 2'b01 
+	Parameter SM_RESP bound to: 2'b10 
+	Parameter LP_DEBUG_CTRL_REG bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axi_ctrl_read' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:1745]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_axi_ctrl_write' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:1920]
+	Parameter C_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter LP_SM_WIDTH bound to: 3 - type: integer 
+	Parameter SM_IDLE bound to: 3'b000 
+	Parameter SM_WRITE bound to: 3'b001 
+	Parameter SM_RESP bound to: 3'b010 
+	Parameter SM_BUSY bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axi_ctrl_write' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:1920]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_reg_bank_16x32' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2971]
+	Parameter C_ACTIVE_REG bound to: 1 - type: integer 
+	Parameter C_REG_MASK bound to: 2 - type: integer 
+	Parameter C_INIT bound to: 512'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010 
+	Parameter LP_MAX bound to: 16 - type: integer 
+	Parameter LP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_reg_bank_16x32' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2971]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_reg_bank_16x32__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2971]
+	Parameter C_ACTIVE_REG bound to: 15 - type: integer 
+	Parameter C_REG_MASK bound to: 32783 - type: integer 
+	Parameter C_INIT bound to: 512'b10000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000 
+	Parameter LP_MAX bound to: 16 - type: integer 
+	Parameter LP_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_reg_bank_16x32__parameterized0' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2971]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axi_ctrl_top' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2077]
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_static_router_config' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2578]
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_CTRL_REG_WIDTH bound to: 150 - type: integer 
+	Parameter SM_IDLE bound to: 3'b000 
+	Parameter SM_START bound to: 3'b001 
+	Parameter SM_WAIT bound to: 3'b010 
+	Parameter SM_COMMIT bound to: 3'b011 
+	Parameter SM_COMPLETE bound to: 3'b100 
+	Parameter LP_LOG_MAX_SLOTS bound to: 4 - type: integer 
+	Parameter LP_NUM_MAX_SLOTS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_switch_v1_1_22_static_router_config_dp' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2346]
+	Parameter C_NUM_MI_SLOTS bound to: 15 - type: integer 
+	Parameter C_NUM_SI_SLOTS bound to: 15 - type: integer 
+	Parameter C_CONNECTIVITY bound to: 225'b111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_CTRL_REG_WIDTH bound to: 150 - type: integer 
+	Parameter LP_LOG_MAX_SLOTS bound to: 4 - type: integer 
+	Parameter LP_NUM_MAX_SLOTS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_static_router_config_dp' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2346]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_static_router_config' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2578]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_static_router' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:2786]
+INFO: [Synth 8-6155] done synthesizing module 'axis_switch_v1_1_22_axis_switch' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/d322/hdl/axis_switch_v1_1_vl_rfs.v:3090]
+INFO: [Synth 8-6155] done synthesizing module 'video_cp_axis_switch_0' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_axis_switch_0/synth/video_cp_axis_switch_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 11688 ; free virtual = 57466
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2398.980 ; gain = 2.848 ; free physical = 11590 ; free virtual = 57368
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2398.980 ; gain = 2.848 ; free physical = 11589 ; free virtual = 57367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2398.980 ; gain = 0.000 ; free physical = 11492 ; free virtual = 57270
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_axis_switch_0/video_cp_axis_switch_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_axis_switch_0/video_cp_axis_switch_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/video_cp_axis_switch_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/video_cp_axis_switch_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/video_cp_axis_switch_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/video_cp_axis_switch_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2564.762 ; gain = 0.000 ; free physical = 11131 ; free virtual = 56909
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2568.730 ; gain = 3.969 ; free physical = 11127 ; free virtual = 56905
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 10525 ; free virtual = 56308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 10525 ; free virtual = 56308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_static_router.gen_synch.inst_cdc_handshake /inst_xpm_cdc_handshake. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_static_router.gen_synch.inst_rst_synch /inst_xpm_cdc_single. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_static_router.gen_synch.inst_cdc_handshake /inst_xpm_cdc_handshake/xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/\gen_static_router.gen_synch.inst_cdc_handshake /inst_xpm_cdc_handshake/xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 10519 ; free virtual = 56302
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_switch_v1_1_22_axi_ctrl_read'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axis_switch_v1_1_22_static_router_config'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                              001 |                               00
+                 SM_READ |                              010 |                               01
+                 SM_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_switch_v1_1_22_axi_ctrl_read'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                            00001 |                              000
+                SM_START |                            00010 |                              001
+                 SM_WAIT |                            00100 |                              010
+               SM_COMMIT |                            01000 |                              011
+             SM_COMPLETE |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axis_switch_v1_1_22_static_router_config'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 10050 ; free virtual = 55833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	              150 Bit    Registers := 4     
+	               32 Bit    Registers := 20    
+	               26 Bit    Registers := 30    
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 36    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 89    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   26 Bit        Muxes := 15    
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   2 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 15    
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 256   
+	   4 Input    1 Bit        Muxes := 15    
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11041 ; free virtual = 56838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 10185 ; free virtual = 55979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11653 ; free virtual = 57446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11490 ; free virtual = 57284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11260 ; free virtual = 57054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11260 ; free virtual = 57053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11210 ; free virtual = 57003
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11206 ; free virtual = 57000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11198 ; free virtual = 56992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11187 ; free virtual = 56980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |    34|
+|2     |LUT2  |    49|
+|3     |LUT3  |   427|
+|4     |LUT4  |    50|
+|5     |LUT5  |   470|
+|6     |LUT6  |  1684|
+|7     |MUXF7 |   869|
+|8     |MUXF8 |   395|
+|9     |FDRE  |  2163|
+|10    |FDSE  |    18|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11176 ; free virtual = 56970
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 2568.730 ; gain = 2.848 ; free physical = 11250 ; free virtual = 57044
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 2568.730 ; gain = 172.598 ; free physical = 11250 ; free virtual = 57044
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2568.730 ; gain = 0.000 ; free physical = 11268 ; free virtual = 57061
+INFO: [Netlist 29-17] Analyzing 1264 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2582.613 ; gain = 0.000 ; free physical = 10231 ; free virtual = 56024
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:49 . Memory (MB): peak = 2582.613 ; gain = 186.602 ; free physical = 10299 ; free virtual = 56093
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/video_cp_axis_switch_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_cp_axis_switch_0, cache-ID = 5a7f3f1c7c32853f
+INFO: [Coretcl 2-1174] Renamed 45 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_axis_switch_0_synth_1/video_cp_axis_switch_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file video_cp_axis_switch_0_utilization_synth.rpt -pb video_cp_axis_switch_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:25:30 2022...

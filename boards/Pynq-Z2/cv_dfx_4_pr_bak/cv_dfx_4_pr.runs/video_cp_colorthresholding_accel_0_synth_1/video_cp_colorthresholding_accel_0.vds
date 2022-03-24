@@ -1,0 +1,534 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:24:36 2022
+# Process ID: 2317434
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1
+# Command line: vivado -log video_cp_colorthresholding_accel_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_cp_colorthresholding_accel_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/video_cp_colorthresholding_accel_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source video_cp_colorthresholding_accel_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top video_cp_colorthresholding_accel_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2317537
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 9643 ; free virtual = 55432
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'video_cp_colorthresholding_accel_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_colorthresholding_accel_0/synth/video_cp_colorthresholding_accel_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 7'b0000000 
+	Parameter ADDR_GIE bound to: 7'b0000100 
+	Parameter ADDR_IER bound to: 7'b0001000 
+	Parameter ADDR_ISR bound to: 7'b0001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_ROWS_CTRL bound to: 7'b0010100 
+	Parameter ADDR_COLS_DATA_0 bound to: 7'b0011000 
+	Parameter ADDR_COLS_CTRL bound to: 7'b0011100 
+	Parameter ADDR_LOWER_THRESHOLD_BASE bound to: 7'b0100000 
+	Parameter ADDR_LOWER_THRESHOLD_HIGH bound to: 7'b0101111 
+	Parameter ADDR_UPPER_THRESHOLD_BASE bound to: 7'b1100000 
+	Parameter ADDR_UPPER_THRESHOLD_HIGH bound to: 7'b1101111 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_control_s_axi_ram' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_control_s_axi.v:544]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_control_s_axi_ram' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_control_s_axi.v:544]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_control_s_axi.v:292]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_control_s_axi' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_regslice_both' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_regslice_both__parameterized0' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_regslice_both__parameterized1' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_entry12' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_entry12.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_entry12' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_entry12.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Loop_VITIS_LOOP_138_1_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Loop_VITIS_LOOP_138_1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b00010 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state6 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Loop_VITIS_LOOP_138_1_proc' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Loop_VITIS_LOOP_138_1_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1080_1920_1_exit_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1080_1920_1_exit_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1080_1920_1_exit_proc' (8#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1080_1920_1_exit_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_xFInRange_9_0_1080_1920_15_0_1_9_1_3_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_xFInRange_9_0_1080_1920_15_0_1_9_1_3_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state8 bound to: 6'b100000 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_mul_mul_16ns_16ns_32_4_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1.v:32]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_mul_mul_16ns_16ns_32_4_1' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_xFInRange_9_0_1080_1920_15_0_1_9_1_3_s' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_xFInRange_9_0_1080_1920_15_0_1_9_1_3_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w16_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w16_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w16_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w16_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w16_d2_S_shiftReg' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w16_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w16_d2_S' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w16_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w8_d3_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d3_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w8_d3_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d3_S.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w8_d3_S_shiftReg' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d3_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w8_d3_S' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d3_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb_shiftReg' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_colorthresholding_9_0_3_1080_1920_1_Block_colorthresholding_9_0_3_1bkb.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_s' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_colorthresholding_9_0_3_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_xfMat2AXIvideo_24_0_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_xfMat2AXIvideo_24_0_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_xfMat2AXIvideo_24_0_1080_1920_1_s' (19#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_xfMat2AXIvideo_24_0_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w32_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w32_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w32_d2_S_shiftReg' (20#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w32_d2_S' (21#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w32_d4_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w32_d4_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w32_d4_S_shiftReg' (22#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w32_d4_S' (23#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w24_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w24_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w24_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w24_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w24_d2_S_shiftReg' (24#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w24_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w24_d2_S' (25#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w24_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w8_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_fifo_w8_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w8_d2_S_shiftReg' (26#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_fifo_w8_d2_S' (27#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_fifo_w8_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' (28#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' (29#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0_shiftReg' (30#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0' (31#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'colorthresholding_accel' (32#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/4dad/hdl/verilog/colorthresholding_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'video_cp_colorthresholding_accel_0' (33#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_colorthresholding_accel_0/synth/video_cp_colorthresholding_accel_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 9963 ; free virtual = 55753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.949 ; gain = 5.816 ; free physical = 10188 ; free virtual = 55979
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2401.949 ; gain = 5.816 ; free physical = 10188 ; free virtual = 55979
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2401.949 ; gain = 0.000 ; free physical = 10175 ; free virtual = 55965
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_colorthresholding_accel_0/constraints/colorthresholding_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_colorthresholding_accel_0/constraints/colorthresholding_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2558.793 ; gain = 0.000 ; free physical = 9972 ; free virtual = 55763
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2562.762 ; gain = 3.969 ; free physical = 9971 ; free virtual = 55761
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 10296 ; free virtual = 56086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 10296 ; free virtual = 56086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 10295 ; free virtual = 56086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "colorthresholding_accel_control_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 10258 ; free virtual = 56050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_0_1080_1920_1_U0/regslice_both_AXI_video_strm_V_id_V_U' (colorthresholding_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_0_1080_1920_1_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 22    
+	   2 Input    2 Bit       Adders := 13    
++---XORs : 
+	   2 Input      1 Bit         XORs := 65    
++---Registers : 
+	               32 Bit    Registers := 21    
+	               24 Bit    Registers := 12    
+	               16 Bit    Registers := 11    
+	               11 Bit    Registers := 6     
+	                8 Bit    Registers := 21    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 30    
+	                2 Bit    Registers := 30    
+	                1 Bit    Registers := 209   
++---RAMs : 
+	               96 Bit	(3 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 31    
+	   2 Input   24 Bit        Muxes := 9     
+	   2 Input   16 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 5     
+	   3 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 2     
+	   7 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 2     
+	   6 Input    5 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 40    
+	   4 Input    2 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 236   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (A2*B2)'.
+DSP Report: register xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_tmp_reg is absorbed into DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_tmp0 is absorbed into DSP xFInRange_9_0_1080_1920_15_0_1_9_1_3_U0/mul_mul_16ns_16ns_32_4_1_U34/colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0_U/p_reg_reg.
+INFO: [Synth 8-3971] The signal "inst/control_s_axi_U/int_lower_threshold/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "inst/control_s_axi_U/int_upper_threshold/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 11233 ; free virtual = 57031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | control_s_axi_U/int_lower_threshold/gen_write[1].mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|inst        | control_s_axi_U/int_upper_threshold/gen_write[1].mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping	Report (see note below)
++---------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                              | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|colorthresholding_accel_mul_mul_16ns_16ns_32_4_1_DSP48_0 | (A2*B2)'    | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 1    | 
++---------------------------------------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2562.762 ; gain = 166.629 ; free physical = 11522 ; free virtual = 57316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2583.020 ; gain = 186.887 ; free physical = 11202 ; free virtual = 56996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | control_s_axi_U/int_lower_threshold/gen_write[1].mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
+|inst        | control_s_axi_U/int_upper_threshold/gen_write[1].mem_reg | 3 x 32(READ_FIRST)     | W | R | 3 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      | 
++------------+----------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_lower_threshold/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_lower_threshold/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_upper_threshold/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/control_s_axi_U/int_upper_threshold/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 11245 ; free virtual = 57039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 10037 ; free virtual = 55836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 10036 ; free virtual = 55835
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 10009 ; free virtual = 55810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 10009 ; free virtual = 55809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 9993 ; free virtual = 55794
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 9989 ; free virtual = 55789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[2] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    62|
+|2     |DSP48E1  |     1|
+|3     |LUT1     |    48|
+|4     |LUT2     |   196|
+|5     |LUT3     |   254|
+|6     |LUT4     |   333|
+|7     |LUT5     |   243|
+|8     |LUT6     |   461|
+|9     |MUXF7    |    16|
+|10    |RAMB36E1 |     2|
+|11    |SRL16E   |   208|
+|12    |FDRE     |  1493|
+|13    |FDSE     |    94|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2599.035 ; gain = 202.902 ; free physical = 9988 ; free virtual = 55788
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2599.035 ; gain = 42.090 ; free physical = 10024 ; free virtual = 55830
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2599.043 ; gain = 202.902 ; free physical = 10024 ; free virtual = 55830
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2599.043 ; gain = 0.000 ; free physical = 10053 ; free virtual = 55866
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.051 ; gain = 0.000 ; free physical = 10810 ; free virtual = 56614
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:42 . Memory (MB): peak = 2631.051 ; gain = 235.039 ; free physical = 10963 ; free virtual = 56768
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/video_cp_colorthresholding_accel_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_cp_colorthresholding_accel_0, cache-ID = e37cf23da042b2c5
+INFO: [Coretcl 2-1174] Renamed 83 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_colorthresholding_accel_0_synth_1/video_cp_colorthresholding_accel_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file video_cp_colorthresholding_accel_0_utilization_synth.rpt -pb video_cp_colorthresholding_accel_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:25:32 2022...

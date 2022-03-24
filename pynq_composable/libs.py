@@ -47,6 +47,7 @@ class VitisVisionIP(DefaultIP):
         "xilinx.com:hls:bitwise_not_accel:1.0",
         "xilinx.com:hls:bitwise_or_accel:1.0",
         "xilinx.com:hls:bitwise_xor_accel:1.0",
+        "xilinx.com:hls:gaussianfilter_accel:1.0", #Willy add
     ]
 
     _rows_offset = 0x10
@@ -716,3 +717,23 @@ class MultiplyIP(VitisVisionIP):
 
         self._scale = float(scale)
         self.write(0x20, _float2int(self.scale))
+        
+        
+        
+#Willy add - s
+class Gaussianfilter(VitisVisionIP):
+    """Gaussian Filter, using gaussianfilter algorithm IP, python driver"""
+    bindto = ['xilinx.com:hls:gaussianfilter_accel:1.0] 
+
+    def __init__(self, description):
+        super().__init__(description=description)
+        self.sigma = 1.0
+
+    def start(self):
+        super().start()
+        if self.sigma < 0.27:
+            aux = 0.27
+        else:
+            aux = self.sigma
+        self.write(0x20, _float2int(aux))
+#Willy add - e

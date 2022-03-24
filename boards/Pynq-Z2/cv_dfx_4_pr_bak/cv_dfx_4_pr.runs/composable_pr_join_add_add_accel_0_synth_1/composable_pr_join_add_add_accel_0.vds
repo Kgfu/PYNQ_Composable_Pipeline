@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:22:59 2022
+# Process ID: 2316290
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1
+# Command line: vivado -log composable_pr_join_add_add_accel_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source composable_pr_join_add_add_accel_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/composable_pr_join_add_add_accel_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source composable_pr_join_add_add_accel_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top composable_pr_join_add_add_accel_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2316434
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2395.164 ; gain = 0.000 ; free physical = 10797 ; free virtual = 56567
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'composable_pr_join_add_add_accel_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_join_add/ip/composable_pr_join_add_add_accel_0/synth/composable_pr_join_add_add_accel_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'add_accel' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_ROWS_CTRL bound to: 5'b10100 
+	Parameter ADDR_COLS_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_COLS_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_control_s_axi.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_control_s_axi' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_AXIvideo2xfMat_24_9_1080_1920_1_3' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_AXIvideo2xfMat_24_9_1080_1920_1_3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_regslice_both' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_regslice_both__parameterized0' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_regslice_both__parameterized1' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_AXIvideo2xfMat_24_9_1080_1920_1_3' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_AXIvideo2xfMat_24_9_1080_1920_1_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_add_0_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_add_0_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_add_0_9_1080_1920_1_s' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_add_0_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w32_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w32_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w32_d2_S_shiftReg' (8#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w32_d2_S' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w32_d4_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w32_d4_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w32_d4_S_shiftReg' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w32_d4_S' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w24_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w24_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_fifo_w24_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w24_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w24_d2_S_shiftReg' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w24_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_fifo_w24_d2_S' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_fifo_w24_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0_shiftReg' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_3_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_add_0_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_add_0_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'add_accel_start_for_add_0_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_add_0_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_add_0_9_1080_1920_1_U0_shiftReg' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_add_0_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel_start_for_add_0_9_1080_1920_1_U0' (19#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel_start_for_add_0_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'add_accel' (20#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_join_add/ipshared/f4a8/hdl/verilog/add_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'composable_pr_join_add_add_accel_0' (21#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_join_add/ip/composable_pr_join_add_add_accel_0/synth/composable_pr_join_add_add_accel_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.164 ; gain = 0.000 ; free physical = 11353 ; free virtual = 57124
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.164 ; gain = 0.000 ; free physical = 11349 ; free virtual = 57120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.164 ; gain = 0.000 ; free physical = 11349 ; free virtual = 57120
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2395.164 ; gain = 0.000 ; free physical = 11340 ; free virtual = 57112
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_join_add/ip/composable_pr_join_add_add_accel_0/constraints/add_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_join_add/ip/composable_pr_join_add_add_accel_0/constraints/add_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2552.887 ; gain = 0.000 ; free physical = 11438 ; free virtual = 57209
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2555.855 ; gain = 2.969 ; free physical = 11437 ; free virtual = 57208
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13344 ; free virtual = 59111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13344 ; free virtual = 59111
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13343 ; free virtual = 59111
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'add_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'add_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'add_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'add_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13307 ; free virtual = 59076
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_id_V_U' (add_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 11    
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 22    
+	               24 Bit    Registers := 24    
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 9     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 15    
+	                2 Bit    Registers := 32    
+	                1 Bit    Registers := 161   
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   2 Input   24 Bit        Muxes := 18    
+	   3 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   3 Input    6 Bit        Muxes := 4     
+	   4 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 27    
+	   4 Input    2 Bit        Muxes := 20    
+	   2 Input    1 Bit        Muxes := 160   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 12639 ; free virtual = 58413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 12815 ; free virtual = 58590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 12737 ; free virtual = 58512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13150 ; free virtual = 58925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    67|
+|2     |LUT1   |    47|
+|3     |LUT2   |   155|
+|4     |LUT3   |   349|
+|5     |LUT4   |   298|
+|6     |LUT5   |   236|
+|7     |LUT6   |   289|
+|8     |SRL16E |    64|
+|9     |FDRE   |  1560|
+|10    |FDSE   |    59|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13105 ; free virtual = 58880
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2555.855 ; gain = 0.000 ; free physical = 13160 ; free virtual = 58935
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2555.855 ; gain = 160.691 ; free physical = 13160 ; free virtual = 58935
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2555.855 ; gain = 0.000 ; free physical = 13238 ; free virtual = 59013
+INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2573.871 ; gain = 0.000 ; free physical = 12924 ; free virtual = 58699
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 2573.871 ; gain = 178.828 ; free physical = 12352 ; free virtual = 58128
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/composable_pr_join_add_add_accel_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP composable_pr_join_add_add_accel_0, cache-ID = 200c9917bbf1bf1b
+INFO: [Coretcl 2-1174] Renamed 41 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_join_add_add_accel_0_synth_1/composable_pr_join_add_add_accel_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file composable_pr_join_add_add_accel_0_utilization_synth.rpt -pb composable_pr_join_add_add_accel_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:23:50 2022...

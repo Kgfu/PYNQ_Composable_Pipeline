@@ -24,7 +24,8 @@ module_name = "pynq_composable"
 board = os.environ.get("BOARD")
 board_folder = "boards/{}".format(board)
 notebooks_dir = os.environ.get("PYNQ_JUPYTER_NOTEBOOKS")
-overlay_dest = "{}/".format(module_name)
+#overlay_dest = "{}/".format(module_name)
+overlay_dest = "{}/overlay".format(module_name)
 data_files = []
 cwd = os.getcwd()
 
@@ -45,7 +46,7 @@ def extend_package(path):
     if os.path.isdir(path):
         data_files.extend(
             [os.path.join("..", root, f)
-             for root, _, files in os.walk(path) for f in files]
+            for root, _, files in os.walk(path) for f in files]
         )
     elif os.path.isfile(path):
         data_files.append(os.path.join("..", path))
@@ -146,7 +147,7 @@ def download_overlay(board, overlay_dest):
 
 if board:
     copy_notebooks(board_folder, module_name)
-    download_overlay(board, overlay_dest)
+#    download_overlay(board, overlay_dest)
 extend_package(module_name)
 update_notebooks_display_port(module_name + '/notebooks/')
 pkg_version = find_version("{}/__init__.py".format(module_name))

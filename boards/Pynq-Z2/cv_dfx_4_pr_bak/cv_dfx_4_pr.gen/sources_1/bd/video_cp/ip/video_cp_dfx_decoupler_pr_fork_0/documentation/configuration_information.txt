@@ -1,0 +1,1053 @@
+Core Configuration Properties
+=============================
+CONFIG.HAS_AXI_LITE                                   0
+CONFIG.HAS_AXIS_CONTROL                               0
+CONFIG.HAS_AXIS_STATUS                                0
+CONFIG.HAS_SIGNAL_CONTROL                             1
+CONFIG.HAS_SIGNAL_STATUS                              1
+CONFIG.ALWAYS_HAVE_AXI_CLK                            0
+CONFIG.INTF.in_0.VLNV                                 xilinx.com:interface:axis_rtl:1.0
+CONFIG.INTF.in_0.MODE                                 slave
+CONFIG.INTF.in_0.CDC_STAGES                           0
+CONFIG.INTF.in_0.SIGNAL.TVALID.PRESENT                1
+CONFIG.INTF.in_0.SIGNAL.TVALID.DECOUPLED              1
+CONFIG.INTF.in_0.SIGNAL.TVALID.DECOUPLED_VALUE        0x0
+CONFIG.INTF.in_0.SIGNAL.TVALID.WIDTH                  1
+CONFIG.INTF.in_0.SIGNAL.TVALID.DIRECTION              s
+CONFIG.INTF.in_0.SIGNAL.TVALID.RESOURCE               infer
+CONFIG.INTF.in_0.SIGNAL.TVALID.MANAGEMENT             auto
+CONFIG.INTF.in_0.SIGNAL.TREADY.PRESENT                1
+CONFIG.INTF.in_0.SIGNAL.TREADY.DECOUPLED              1
+CONFIG.INTF.in_0.SIGNAL.TREADY.DECOUPLED_VALUE        0x0
+CONFIG.INTF.in_0.SIGNAL.TREADY.WIDTH                  1
+CONFIG.INTF.in_0.SIGNAL.TREADY.DIRECTION              s
+CONFIG.INTF.in_0.SIGNAL.TREADY.RESOURCE               infer
+CONFIG.INTF.in_0.SIGNAL.TREADY.MANAGEMENT             auto
+CONFIG.INTF.in_0.SIGNAL.TDATA.PRESENT                 1
+CONFIG.INTF.in_0.SIGNAL.TDATA.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TDATA.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TDATA.WIDTH                   24
+CONFIG.INTF.in_0.SIGNAL.TDATA.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TDATA.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TDATA.MANAGEMENT              auto
+CONFIG.INTF.in_0.SIGNAL.TUSER.PRESENT                 1
+CONFIG.INTF.in_0.SIGNAL.TUSER.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TUSER.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TUSER.WIDTH                   1
+CONFIG.INTF.in_0.SIGNAL.TUSER.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TUSER.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TUSER.MANAGEMENT              auto
+CONFIG.INTF.in_0.SIGNAL.TLAST.PRESENT                 1
+CONFIG.INTF.in_0.SIGNAL.TLAST.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TLAST.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TLAST.WIDTH                   1
+CONFIG.INTF.in_0.SIGNAL.TLAST.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TLAST.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TLAST.MANAGEMENT              auto
+CONFIG.INTF.in_0.SIGNAL.TID.PRESENT                   0
+CONFIG.INTF.in_0.SIGNAL.TID.DECOUPLED                 0
+CONFIG.INTF.in_0.SIGNAL.TID.DECOUPLED_VALUE           0x0
+CONFIG.INTF.in_0.SIGNAL.TID.WIDTH                     0
+CONFIG.INTF.in_0.SIGNAL.TID.DIRECTION                 s
+CONFIG.INTF.in_0.SIGNAL.TID.RESOURCE                  infer
+CONFIG.INTF.in_0.SIGNAL.TID.MANAGEMENT                auto
+CONFIG.INTF.in_0.SIGNAL.TDEST.PRESENT                 0
+CONFIG.INTF.in_0.SIGNAL.TDEST.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TDEST.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TDEST.WIDTH                   0
+CONFIG.INTF.in_0.SIGNAL.TDEST.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TDEST.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TDEST.MANAGEMENT              auto
+CONFIG.INTF.in_0.SIGNAL.TSTRB.PRESENT                 0
+CONFIG.INTF.in_0.SIGNAL.TSTRB.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TSTRB.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TSTRB.WIDTH                   3
+CONFIG.INTF.in_0.SIGNAL.TSTRB.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TSTRB.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TSTRB.MANAGEMENT              auto
+CONFIG.INTF.in_0.SIGNAL.TKEEP.PRESENT                 0
+CONFIG.INTF.in_0.SIGNAL.TKEEP.DECOUPLED               0
+CONFIG.INTF.in_0.SIGNAL.TKEEP.DECOUPLED_VALUE         0x0
+CONFIG.INTF.in_0.SIGNAL.TKEEP.WIDTH                   3
+CONFIG.INTF.in_0.SIGNAL.TKEEP.DIRECTION               s
+CONFIG.INTF.in_0.SIGNAL.TKEEP.RESOURCE                infer
+CONFIG.INTF.in_0.SIGNAL.TKEEP.MANAGEMENT              auto
+CONFIG.INTF.out_0.VLNV                                xilinx.com:interface:axis_rtl:1.0
+CONFIG.INTF.out_0.MODE                                master
+CONFIG.INTF.out_0.CDC_STAGES                          0
+CONFIG.INTF.out_0.SIGNAL.TVALID.PRESENT               1
+CONFIG.INTF.out_0.SIGNAL.TVALID.DECOUPLED             1
+CONFIG.INTF.out_0.SIGNAL.TVALID.DECOUPLED_VALUE       0x0
+CONFIG.INTF.out_0.SIGNAL.TVALID.WIDTH                 1
+CONFIG.INTF.out_0.SIGNAL.TVALID.DIRECTION             s
+CONFIG.INTF.out_0.SIGNAL.TVALID.RESOURCE              infer
+CONFIG.INTF.out_0.SIGNAL.TVALID.MANAGEMENT            auto
+CONFIG.INTF.out_0.SIGNAL.TREADY.PRESENT               1
+CONFIG.INTF.out_0.SIGNAL.TREADY.DECOUPLED             1
+CONFIG.INTF.out_0.SIGNAL.TREADY.DECOUPLED_VALUE       0x0
+CONFIG.INTF.out_0.SIGNAL.TREADY.WIDTH                 1
+CONFIG.INTF.out_0.SIGNAL.TREADY.DIRECTION             s
+CONFIG.INTF.out_0.SIGNAL.TREADY.RESOURCE              infer
+CONFIG.INTF.out_0.SIGNAL.TREADY.MANAGEMENT            auto
+CONFIG.INTF.out_0.SIGNAL.TDATA.PRESENT                1
+CONFIG.INTF.out_0.SIGNAL.TDATA.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TDATA.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TDATA.WIDTH                  24
+CONFIG.INTF.out_0.SIGNAL.TDATA.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TDATA.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TDATA.MANAGEMENT             auto
+CONFIG.INTF.out_0.SIGNAL.TUSER.PRESENT                1
+CONFIG.INTF.out_0.SIGNAL.TUSER.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TUSER.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TUSER.WIDTH                  1
+CONFIG.INTF.out_0.SIGNAL.TUSER.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TUSER.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TUSER.MANAGEMENT             auto
+CONFIG.INTF.out_0.SIGNAL.TLAST.PRESENT                1
+CONFIG.INTF.out_0.SIGNAL.TLAST.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TLAST.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TLAST.WIDTH                  1
+CONFIG.INTF.out_0.SIGNAL.TLAST.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TLAST.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TLAST.MANAGEMENT             auto
+CONFIG.INTF.out_0.SIGNAL.TID.PRESENT                  1
+CONFIG.INTF.out_0.SIGNAL.TID.DECOUPLED                0
+CONFIG.INTF.out_0.SIGNAL.TID.DECOUPLED_VALUE          0x0
+CONFIG.INTF.out_0.SIGNAL.TID.WIDTH                    1
+CONFIG.INTF.out_0.SIGNAL.TID.DIRECTION                s
+CONFIG.INTF.out_0.SIGNAL.TID.RESOURCE                 infer
+CONFIG.INTF.out_0.SIGNAL.TID.MANAGEMENT               auto
+CONFIG.INTF.out_0.SIGNAL.TDEST.PRESENT                1
+CONFIG.INTF.out_0.SIGNAL.TDEST.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TDEST.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TDEST.WIDTH                  1
+CONFIG.INTF.out_0.SIGNAL.TDEST.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TDEST.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TDEST.MANAGEMENT             auto
+CONFIG.INTF.out_0.SIGNAL.TSTRB.PRESENT                0
+CONFIG.INTF.out_0.SIGNAL.TSTRB.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TSTRB.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TSTRB.WIDTH                  3
+CONFIG.INTF.out_0.SIGNAL.TSTRB.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TSTRB.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TSTRB.MANAGEMENT             auto
+CONFIG.INTF.out_0.SIGNAL.TKEEP.PRESENT                0
+CONFIG.INTF.out_0.SIGNAL.TKEEP.DECOUPLED              0
+CONFIG.INTF.out_0.SIGNAL.TKEEP.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_0.SIGNAL.TKEEP.WIDTH                  3
+CONFIG.INTF.out_0.SIGNAL.TKEEP.DIRECTION              s
+CONFIG.INTF.out_0.SIGNAL.TKEEP.RESOURCE               infer
+CONFIG.INTF.out_0.SIGNAL.TKEEP.MANAGEMENT             auto
+CONFIG.INTF.out_1.VLNV                                xilinx.com:interface:axis_rtl:1.0
+CONFIG.INTF.out_1.MODE                                master
+CONFIG.INTF.out_1.CDC_STAGES                          0
+CONFIG.INTF.out_1.SIGNAL.TVALID.PRESENT               1
+CONFIG.INTF.out_1.SIGNAL.TVALID.DECOUPLED             1
+CONFIG.INTF.out_1.SIGNAL.TVALID.DECOUPLED_VALUE       0x0
+CONFIG.INTF.out_1.SIGNAL.TVALID.WIDTH                 1
+CONFIG.INTF.out_1.SIGNAL.TVALID.DIRECTION             s
+CONFIG.INTF.out_1.SIGNAL.TVALID.RESOURCE              infer
+CONFIG.INTF.out_1.SIGNAL.TVALID.MANAGEMENT            auto
+CONFIG.INTF.out_1.SIGNAL.TREADY.PRESENT               1
+CONFIG.INTF.out_1.SIGNAL.TREADY.DECOUPLED             1
+CONFIG.INTF.out_1.SIGNAL.TREADY.DECOUPLED_VALUE       0x0
+CONFIG.INTF.out_1.SIGNAL.TREADY.WIDTH                 1
+CONFIG.INTF.out_1.SIGNAL.TREADY.DIRECTION             s
+CONFIG.INTF.out_1.SIGNAL.TREADY.RESOURCE              infer
+CONFIG.INTF.out_1.SIGNAL.TREADY.MANAGEMENT            auto
+CONFIG.INTF.out_1.SIGNAL.TDATA.PRESENT                1
+CONFIG.INTF.out_1.SIGNAL.TDATA.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TDATA.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TDATA.WIDTH                  24
+CONFIG.INTF.out_1.SIGNAL.TDATA.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TDATA.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TDATA.MANAGEMENT             auto
+CONFIG.INTF.out_1.SIGNAL.TUSER.PRESENT                1
+CONFIG.INTF.out_1.SIGNAL.TUSER.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TUSER.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TUSER.WIDTH                  1
+CONFIG.INTF.out_1.SIGNAL.TUSER.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TUSER.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TUSER.MANAGEMENT             auto
+CONFIG.INTF.out_1.SIGNAL.TLAST.PRESENT                1
+CONFIG.INTF.out_1.SIGNAL.TLAST.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TLAST.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TLAST.WIDTH                  1
+CONFIG.INTF.out_1.SIGNAL.TLAST.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TLAST.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TLAST.MANAGEMENT             auto
+CONFIG.INTF.out_1.SIGNAL.TID.PRESENT                  1
+CONFIG.INTF.out_1.SIGNAL.TID.DECOUPLED                0
+CONFIG.INTF.out_1.SIGNAL.TID.DECOUPLED_VALUE          0x0
+CONFIG.INTF.out_1.SIGNAL.TID.WIDTH                    1
+CONFIG.INTF.out_1.SIGNAL.TID.DIRECTION                s
+CONFIG.INTF.out_1.SIGNAL.TID.RESOURCE                 infer
+CONFIG.INTF.out_1.SIGNAL.TID.MANAGEMENT               auto
+CONFIG.INTF.out_1.SIGNAL.TDEST.PRESENT                1
+CONFIG.INTF.out_1.SIGNAL.TDEST.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TDEST.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TDEST.WIDTH                  1
+CONFIG.INTF.out_1.SIGNAL.TDEST.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TDEST.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TDEST.MANAGEMENT             auto
+CONFIG.INTF.out_1.SIGNAL.TSTRB.PRESENT                0
+CONFIG.INTF.out_1.SIGNAL.TSTRB.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TSTRB.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TSTRB.WIDTH                  3
+CONFIG.INTF.out_1.SIGNAL.TSTRB.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TSTRB.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TSTRB.MANAGEMENT             auto
+CONFIG.INTF.out_1.SIGNAL.TKEEP.PRESENT                0
+CONFIG.INTF.out_1.SIGNAL.TKEEP.DECOUPLED              0
+CONFIG.INTF.out_1.SIGNAL.TKEEP.DECOUPLED_VALUE        0x0
+CONFIG.INTF.out_1.SIGNAL.TKEEP.WIDTH                  3
+CONFIG.INTF.out_1.SIGNAL.TKEEP.DIRECTION              s
+CONFIG.INTF.out_1.SIGNAL.TKEEP.RESOURCE               infer
+CONFIG.INTF.out_1.SIGNAL.TKEEP.MANAGEMENT             auto
+CONFIG.INTF.axi_lite.VLNV                             xilinx.com:interface:aximm_rtl:1.0
+CONFIG.INTF.axi_lite.PROTOCOL                         axi4lite
+CONFIG.INTF.axi_lite.MODE                             master
+CONFIG.INTF.axi_lite.CDC_STAGES                       0
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.PRESENT           1
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DECOUPLED         1
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.WIDTH             1
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.ARVALID.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.PRESENT           1
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DECOUPLED         1
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.WIDTH             1
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.ARREADY.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.PRESENT           1
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DECOUPLED         1
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.WIDTH             1
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.AWVALID.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.PRESENT           1
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DECOUPLED         1
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.WIDTH             1
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.AWREADY.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.BVALID.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.BREADY.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.RVALID.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.RREADY.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.WVALID.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.DECOUPLED          1
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.WREADY.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.AWID.PRESENT              0
+CONFIG.INTF.axi_lite.SIGNAL.AWID.DECOUPLED            0
+CONFIG.INTF.axi_lite.SIGNAL.AWID.DECOUPLED_VALUE      0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWID.WIDTH                0
+CONFIG.INTF.axi_lite.SIGNAL.AWID.DIRECTION            s
+CONFIG.INTF.axi_lite.SIGNAL.AWID.RESOURCE             infer
+CONFIG.INTF.axi_lite.SIGNAL.AWID.MANAGEMENT           auto
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.WIDTH              31
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.AWADDR.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.WIDTH               8
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.AWLEN.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.WIDTH              3
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.PRESENT           0
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DECOUPLED         0
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.WIDTH             2
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.AWBURST.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.PRESENT           0
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DECOUPLED         0
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.WIDTH             4
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.WIDTH              3
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.AWPROT.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.PRESENT          1
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DECOUPLED        0
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DECOUPLED_VALUE  0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.WIDTH            4
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DIRECTION        s
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.RESOURCE         infer
+CONFIG.INTF.axi_lite.SIGNAL.AWREGION.MANAGEMENT       auto
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.WIDTH               4
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.AWQOS.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.WIDTH              0
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.AWUSER.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.WID.PRESENT               0
+CONFIG.INTF.axi_lite.SIGNAL.WID.DECOUPLED             0
+CONFIG.INTF.axi_lite.SIGNAL.WID.DECOUPLED_VALUE       0x0
+CONFIG.INTF.axi_lite.SIGNAL.WID.WIDTH                 0
+CONFIG.INTF.axi_lite.SIGNAL.WID.DIRECTION             s
+CONFIG.INTF.axi_lite.SIGNAL.WID.RESOURCE              infer
+CONFIG.INTF.axi_lite.SIGNAL.WID.MANAGEMENT            auto
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.WIDTH               32
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.WDATA.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.WIDTH               4
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.WSTRB.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.WIDTH               1
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.WLAST.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.WIDTH               0
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.WUSER.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.BID.PRESENT               0
+CONFIG.INTF.axi_lite.SIGNAL.BID.DECOUPLED             0
+CONFIG.INTF.axi_lite.SIGNAL.BID.DECOUPLED_VALUE       0x0
+CONFIG.INTF.axi_lite.SIGNAL.BID.WIDTH                 0
+CONFIG.INTF.axi_lite.SIGNAL.BID.DIRECTION             s
+CONFIG.INTF.axi_lite.SIGNAL.BID.RESOURCE              infer
+CONFIG.INTF.axi_lite.SIGNAL.BID.MANAGEMENT            auto
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.WIDTH               2
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.BRESP.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.WIDTH               0
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.BUSER.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.ARID.PRESENT              0
+CONFIG.INTF.axi_lite.SIGNAL.ARID.DECOUPLED            0
+CONFIG.INTF.axi_lite.SIGNAL.ARID.DECOUPLED_VALUE      0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARID.WIDTH                0
+CONFIG.INTF.axi_lite.SIGNAL.ARID.DIRECTION            s
+CONFIG.INTF.axi_lite.SIGNAL.ARID.RESOURCE             infer
+CONFIG.INTF.axi_lite.SIGNAL.ARID.MANAGEMENT           auto
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.WIDTH              31
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.ARADDR.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.WIDTH               8
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.ARLEN.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.WIDTH              3
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.PRESENT           0
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DECOUPLED         0
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.WIDTH             2
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.ARBURST.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.WIDTH              1
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.PRESENT           0
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DECOUPLED         0
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DECOUPLED_VALUE   0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.WIDTH             4
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DIRECTION         s
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.RESOURCE          infer
+CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.MANAGEMENT        auto
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.PRESENT            1
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.WIDTH              3
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.ARPROT.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.PRESENT          1
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DECOUPLED        0
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DECOUPLED_VALUE  0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.WIDTH            4
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DIRECTION        s
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.RESOURCE         infer
+CONFIG.INTF.axi_lite.SIGNAL.ARREGION.MANAGEMENT       auto
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.WIDTH               4
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.ARQOS.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.PRESENT            0
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DECOUPLED          0
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DECOUPLED_VALUE    0x0
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.WIDTH              0
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DIRECTION          s
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.RESOURCE           infer
+CONFIG.INTF.axi_lite.SIGNAL.ARUSER.MANAGEMENT         auto
+CONFIG.INTF.axi_lite.SIGNAL.RID.PRESENT               0
+CONFIG.INTF.axi_lite.SIGNAL.RID.DECOUPLED             0
+CONFIG.INTF.axi_lite.SIGNAL.RID.DECOUPLED_VALUE       0x0
+CONFIG.INTF.axi_lite.SIGNAL.RID.WIDTH                 0
+CONFIG.INTF.axi_lite.SIGNAL.RID.DIRECTION             s
+CONFIG.INTF.axi_lite.SIGNAL.RID.RESOURCE              infer
+CONFIG.INTF.axi_lite.SIGNAL.RID.MANAGEMENT            auto
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.WIDTH               32
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.RDATA.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.PRESENT             1
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.WIDTH               2
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.RRESP.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.WIDTH               1
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.RLAST.MANAGEMENT          auto
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.PRESENT             0
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.DECOUPLED           0
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.DECOUPLED_VALUE     0x0
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.WIDTH               0
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.DIRECTION           s
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.RESOURCE            infer
+CONFIG.INTF.axi_lite.SIGNAL.RUSER.MANAGEMENT          auto
+
+
+dfx_decoupler_v1_0::set_property -dict [list \
+                               CONFIG.HAS_AXI_LITE                                   0 \
+                               CONFIG.HAS_AXIS_CONTROL                               0 \
+                               CONFIG.HAS_AXIS_STATUS                                0 \
+                               CONFIG.HAS_SIGNAL_CONTROL                             1 \
+                               CONFIG.HAS_SIGNAL_STATUS                              1 \
+                               CONFIG.ALWAYS_HAVE_AXI_CLK                            0 \
+                               CONFIG.INTF.in_0.VLNV                                 xilinx.com:interface:axis_rtl:1.0 \
+                               CONFIG.INTF.in_0.MODE                                 slave \
+                               CONFIG.INTF.in_0.CDC_STAGES                           0 \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.PRESENT                1 \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.DECOUPLED              1 \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.WIDTH                  1 \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.DIRECTION              s \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.RESOURCE               infer \
+                               CONFIG.INTF.in_0.SIGNAL.TVALID.MANAGEMENT             auto \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.PRESENT                1 \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.DECOUPLED              1 \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.WIDTH                  1 \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.DIRECTION              s \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.RESOURCE               infer \
+                               CONFIG.INTF.in_0.SIGNAL.TREADY.MANAGEMENT             auto \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.PRESENT                 1 \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.WIDTH                   24 \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TDATA.MANAGEMENT              auto \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.PRESENT                 1 \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.WIDTH                   1 \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TUSER.MANAGEMENT              auto \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.PRESENT                 1 \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.WIDTH                   1 \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TLAST.MANAGEMENT              auto \
+                               CONFIG.INTF.in_0.SIGNAL.TID.PRESENT                   0 \
+                               CONFIG.INTF.in_0.SIGNAL.TID.DECOUPLED                 0 \
+                               CONFIG.INTF.in_0.SIGNAL.TID.DECOUPLED_VALUE           0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TID.WIDTH                     0 \
+                               CONFIG.INTF.in_0.SIGNAL.TID.DIRECTION                 s \
+                               CONFIG.INTF.in_0.SIGNAL.TID.RESOURCE                  infer \
+                               CONFIG.INTF.in_0.SIGNAL.TID.MANAGEMENT                auto \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.PRESENT                 0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.WIDTH                   0 \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TDEST.MANAGEMENT              auto \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.PRESENT                 0 \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.WIDTH                   3 \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TSTRB.MANAGEMENT              auto \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.PRESENT                 0 \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.DECOUPLED               0 \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.DECOUPLED_VALUE         0x0 \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.WIDTH                   3 \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.DIRECTION               s \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.RESOURCE                infer \
+                               CONFIG.INTF.in_0.SIGNAL.TKEEP.MANAGEMENT              auto \
+                               CONFIG.INTF.out_0.VLNV                                xilinx.com:interface:axis_rtl:1.0 \
+                               CONFIG.INTF.out_0.MODE                                master \
+                               CONFIG.INTF.out_0.CDC_STAGES                          0 \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.PRESENT               1 \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.DECOUPLED             1 \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.WIDTH                 1 \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.DIRECTION             s \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.RESOURCE              infer \
+                               CONFIG.INTF.out_0.SIGNAL.TVALID.MANAGEMENT            auto \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.PRESENT               1 \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.DECOUPLED             1 \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.WIDTH                 1 \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.DIRECTION             s \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.RESOURCE              infer \
+                               CONFIG.INTF.out_0.SIGNAL.TREADY.MANAGEMENT            auto \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.PRESENT                1 \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.WIDTH                  24 \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TDATA.MANAGEMENT             auto \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.PRESENT                1 \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.WIDTH                  1 \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TUSER.MANAGEMENT             auto \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.PRESENT                1 \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.WIDTH                  1 \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TLAST.MANAGEMENT             auto \
+                               CONFIG.INTF.out_0.SIGNAL.TID.PRESENT                  1 \
+                               CONFIG.INTF.out_0.SIGNAL.TID.DECOUPLED                0 \
+                               CONFIG.INTF.out_0.SIGNAL.TID.DECOUPLED_VALUE          0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TID.WIDTH                    1 \
+                               CONFIG.INTF.out_0.SIGNAL.TID.DIRECTION                s \
+                               CONFIG.INTF.out_0.SIGNAL.TID.RESOURCE                 infer \
+                               CONFIG.INTF.out_0.SIGNAL.TID.MANAGEMENT               auto \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.PRESENT                1 \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.WIDTH                  1 \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TDEST.MANAGEMENT             auto \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.PRESENT                0 \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.WIDTH                  3 \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TSTRB.MANAGEMENT             auto \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.PRESENT                0 \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.DECOUPLED              0 \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.WIDTH                  3 \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.DIRECTION              s \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.RESOURCE               infer \
+                               CONFIG.INTF.out_0.SIGNAL.TKEEP.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.VLNV                                xilinx.com:interface:axis_rtl:1.0 \
+                               CONFIG.INTF.out_1.MODE                                master \
+                               CONFIG.INTF.out_1.CDC_STAGES                          0 \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.PRESENT               1 \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.DECOUPLED             1 \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.WIDTH                 1 \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.DIRECTION             s \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.RESOURCE              infer \
+                               CONFIG.INTF.out_1.SIGNAL.TVALID.MANAGEMENT            auto \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.PRESENT               1 \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.DECOUPLED             1 \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.WIDTH                 1 \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.DIRECTION             s \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.RESOURCE              infer \
+                               CONFIG.INTF.out_1.SIGNAL.TREADY.MANAGEMENT            auto \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.PRESENT                1 \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.WIDTH                  24 \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TDATA.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.PRESENT                1 \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.WIDTH                  1 \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TUSER.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.PRESENT                1 \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.WIDTH                  1 \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TLAST.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.SIGNAL.TID.PRESENT                  1 \
+                               CONFIG.INTF.out_1.SIGNAL.TID.DECOUPLED                0 \
+                               CONFIG.INTF.out_1.SIGNAL.TID.DECOUPLED_VALUE          0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TID.WIDTH                    1 \
+                               CONFIG.INTF.out_1.SIGNAL.TID.DIRECTION                s \
+                               CONFIG.INTF.out_1.SIGNAL.TID.RESOURCE                 infer \
+                               CONFIG.INTF.out_1.SIGNAL.TID.MANAGEMENT               auto \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.PRESENT                1 \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.WIDTH                  1 \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TDEST.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.PRESENT                0 \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.WIDTH                  3 \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TSTRB.MANAGEMENT             auto \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.PRESENT                0 \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.DECOUPLED              0 \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.DECOUPLED_VALUE        0x0 \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.WIDTH                  3 \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.DIRECTION              s \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.RESOURCE               infer \
+                               CONFIG.INTF.out_1.SIGNAL.TKEEP.MANAGEMENT             auto \
+                               CONFIG.INTF.axi_lite.VLNV                             xilinx.com:interface:aximm_rtl:1.0 \
+                               CONFIG.INTF.axi_lite.PROTOCOL                         axi4lite \
+                               CONFIG.INTF.axi_lite.MODE                             master \
+                               CONFIG.INTF.axi_lite.CDC_STAGES                       0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.PRESENT           1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DECOUPLED         1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.WIDTH             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARVALID.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.PRESENT           1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DECOUPLED         1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.WIDTH             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREADY.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.PRESENT           1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DECOUPLED         1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.WIDTH             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWVALID.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.PRESENT           1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DECOUPLED         1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.WIDTH             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREADY.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.BVALID.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.BREADY.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RVALID.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RREADY.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WVALID.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.DECOUPLED          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WREADY.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.PRESENT              0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.DECOUPLED            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.DECOUPLED_VALUE      0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.WIDTH                0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.DIRECTION            s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.RESOURCE             infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWID.MANAGEMENT           auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.WIDTH              31 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWADDR.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.WIDTH               8 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLEN.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.WIDTH              3 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWSIZE.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.PRESENT           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DECOUPLED         0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.WIDTH             2 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWBURST.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWLOCK.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.PRESENT           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DECOUPLED         0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.WIDTH             4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWCACHE.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.WIDTH              3 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWPROT.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.PRESENT          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DECOUPLED        0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DECOUPLED_VALUE  0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.WIDTH            4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.DIRECTION        s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.RESOURCE         infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWREGION.MANAGEMENT       auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.WIDTH               4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWQOS.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.WIDTH              0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.AWUSER.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.PRESENT               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.DECOUPLED             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.WIDTH                 0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.DIRECTION             s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.RESOURCE              infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WID.MANAGEMENT            auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.WIDTH               32 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WDATA.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.WIDTH               4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WSTRB.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.WIDTH               1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WLAST.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.WIDTH               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.WUSER.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.PRESENT               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.DECOUPLED             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.WIDTH                 0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.DIRECTION             s \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.RESOURCE              infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.BID.MANAGEMENT            auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.WIDTH               2 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.BRESP.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.WIDTH               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.BUSER.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.PRESENT              0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.DECOUPLED            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.DECOUPLED_VALUE      0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.WIDTH                0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.DIRECTION            s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.RESOURCE             infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARID.MANAGEMENT           auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.WIDTH              31 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARADDR.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.WIDTH               8 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLEN.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.WIDTH              3 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARSIZE.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.PRESENT           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DECOUPLED         0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.WIDTH             2 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARBURST.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.WIDTH              1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARLOCK.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.PRESENT           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DECOUPLED         0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.WIDTH             4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.DIRECTION         s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.RESOURCE          infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARCACHE.MANAGEMENT        auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.PRESENT            1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.WIDTH              3 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARPROT.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.PRESENT          1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DECOUPLED        0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DECOUPLED_VALUE  0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.WIDTH            4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.DIRECTION        s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.RESOURCE         infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARREGION.MANAGEMENT       auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.WIDTH               4 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARQOS.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.PRESENT            0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DECOUPLED          0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DECOUPLED_VALUE    0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.WIDTH              0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.DIRECTION          s \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.RESOURCE           infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.ARUSER.MANAGEMENT         auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.PRESENT               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.DECOUPLED             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.DECOUPLED_VALUE       0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.WIDTH                 0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.DIRECTION             s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.RESOURCE              infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RID.MANAGEMENT            auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.WIDTH               32 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RDATA.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.PRESENT             1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.WIDTH               2 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RRESP.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.WIDTH               1 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RLAST.MANAGEMENT          auto \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.PRESENT             0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.DECOUPLED           0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.WIDTH               0 \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.DIRECTION           s \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.RESOURCE            infer \
+                               CONFIG.INTF.axi_lite.SIGNAL.RUSER.MANAGEMENT          auto \
+] [get_ips video_cp_dfx_decoupler_pr_fork_0]
+

@@ -1,0 +1,446 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:28:07 2022
+# Process ID: 2319486
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1
+# Command line: vivado -log composable_pr_fork_duplicate_duplicate_accel_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source composable_pr_fork_duplicate_duplicate_accel_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/composable_pr_fork_duplicate_duplicate_accel_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source composable_pr_fork_duplicate_duplicate_accel_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top composable_pr_fork_duplicate_duplicate_accel_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2319584
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 8770 ; free virtual = 54618
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'composable_pr_fork_duplicate_duplicate_accel_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ip/composable_pr_fork_duplicate_duplicate_accel_0/synth/composable_pr_fork_duplicate_duplicate_accel_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 9'b000000000 
+	Parameter ADDR_GIE bound to: 9'b000000100 
+	Parameter ADDR_IER bound to: 9'b000001000 
+	Parameter ADDR_ISR bound to: 9'b000001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 9'b111101100 
+	Parameter ADDR_ROWS_CTRL bound to: 9'b111110000 
+	Parameter ADDR_COLS_DATA_0 bound to: 9'b111110100 
+	Parameter ADDR_COLS_CTRL bound to: 9'b111111000 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 9 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_control_s_axi.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_control_s_axi' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_regslice_both' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_regslice_both__parameterized0' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_regslice_both__parameterized1' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_duplicateMat_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_duplicateMat_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_duplicateMat_9_1080_1920_1_s' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_duplicateMat_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_3' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_3' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w32_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w32_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w32_d2_S_shiftReg' (8#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w32_d2_S' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w32_d4_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w32_d4_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w32_d4_S_shiftReg' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w32_d4_S' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w24_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w24_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_fifo_w24_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w24_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w24_d2_S_shiftReg' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w24_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_fifo_w24_d2_S' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_fifo_w24_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0_shiftReg' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_3_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' (19#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0_shiftReg' (20#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0' (21#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel_start_for_duplicateMat_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'duplicate_accel' (22#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ipshared/65d9/hdl/verilog/duplicate_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'composable_pr_fork_duplicate_duplicate_accel_0' (23#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ip/composable_pr_fork_duplicate_duplicate_accel_0/synth/composable_pr_fork_duplicate_duplicate_accel_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 10075 ; free virtual = 55925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 10200 ; free virtual = 56055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 10200 ; free virtual = 56055
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2396.133 ; gain = 0.000 ; free physical = 10171 ; free virtual = 56026
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ip/composable_pr_fork_duplicate_duplicate_accel_0/constraints/duplicate_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_fork_duplicate/ip/composable_pr_fork_duplicate_duplicate_accel_0/constraints/duplicate_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2550.855 ; gain = 0.000 ; free physical = 9958 ; free virtual = 55813
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2554.824 ; gain = 3.969 ; free physical = 9946 ; free virtual = 55800
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 9878 ; free virtual = 55733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 9878 ; free virtual = 55733
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 9878 ; free virtual = 55733
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'duplicate_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'duplicate_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'duplicate_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'duplicate_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 9866 ; free virtual = 55723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_9_1080_1920_1_3_U0/regslice_both_AXI_video_strm_V_id_V_U' (duplicate_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_9_1080_1920_1_3_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_id_V_U' (duplicate_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 19    
+	               24 Bit    Registers := 18    
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	               11 Bit    Registers := 9     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 18    
+	                2 Bit    Registers := 29    
+	                1 Bit    Registers := 145   
++---Muxes : 
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 12    
+	   3 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 9     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 29    
+	   4 Input    2 Bit        Muxes := 19    
+	   2 Input    1 Bit        Muxes := 147   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 10023 ; free virtual = 55886
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2554.824 ; gain = 158.691 ; free physical = 11038 ; free virtual = 56899
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2562.488 ; gain = 166.355 ; free physical = 11848 ; free virtual = 57709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11837 ; free virtual = 57698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11537 ; free virtual = 57398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11537 ; free virtual = 57398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11523 ; free virtual = 57385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11522 ; free virtual = 57384
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11517 ; free virtual = 57379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11553 ; free virtual = 57415
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    66|
+|2     |LUT1   |    81|
+|3     |LUT2   |   207|
+|4     |LUT3   |   267|
+|5     |LUT4   |   351|
+|6     |LUT5   |   161|
+|7     |LUT6   |   159|
+|8     |SRL16E |   128|
+|9     |FDRE   |  1262|
+|10    |FDSE   |    40|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.496 ; gain = 174.363 ; free physical = 11570 ; free virtual = 57432
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2570.496 ; gain = 15.672 ; free physical = 11568 ; free virtual = 57429
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2570.504 ; gain = 174.363 ; free physical = 11568 ; free virtual = 57429
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2570.504 ; gain = 0.000 ; free physical = 11832 ; free virtual = 57693
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2602.512 ; gain = 0.000 ; free physical = 11480 ; free virtual = 57342
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 2602.512 ; gain = 206.500 ; free physical = 11289 ; free virtual = 57151
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/composable_pr_fork_duplicate_duplicate_accel_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP composable_pr_fork_duplicate_duplicate_accel_0, cache-ID = db94aa598bf5cbf2
+INFO: [Coretcl 2-1174] Renamed 41 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_fork_duplicate_duplicate_accel_0_synth_1/composable_pr_fork_duplicate_duplicate_accel_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file composable_pr_fork_duplicate_duplicate_accel_0_utilization_synth.rpt -pb composable_pr_fork_duplicate_duplicate_accel_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:28:56 2022...

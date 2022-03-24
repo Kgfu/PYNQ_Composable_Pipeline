@@ -1,0 +1,355 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2.2 (lin64) Build 3118627 Tue Feb  9 05:13:49 MST 2021
+| Date         : Wed Mar 16 12:09:09 2022
+| Host         : ubuntu3 running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_utilization -file video_cp_wrapper_utilization_placed.rpt -pb video_cp_wrapper_utilization_placed.pb
+| Design       : video_cp_wrapper
+| Device       : 7z020clg400-1
+| Design State : Fully Placed
+-----------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+| Slice LUTs                 | 32358 | 21988 |     53200 | 60.82 |
+|   LUT as Logic             | 30838 | 21098 |     53200 | 57.97 |
+|   LUT as Memory            |  1520 |   890 |     17400 |  8.74 |
+|     LUT as Distributed RAM |    42 |    42 |           |       |
+|     LUT as Shift Register  |  1478 |   848 |           |       |
+| Slice Registers            | 49162 | 36401 |    106400 | 46.20 |
+|   Register as Flip Flop    | 49162 | 36401 |    106400 | 46.20 |
+|   Register as Latch        |     0 |     0 |    106400 |  0.00 |
+| F7 Muxes                   |  1329 |  1298 |     26600 |  5.00 |
+| F8 Muxes                   |   398 |   398 |     13300 |  2.99 |
++----------------------------+-------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 55    |          Yes |           - |          Set |
+| 128   |          Yes |           - |        Reset |
+| 1358  |          Yes |         Set |            - |
+| 47621 |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+-------+-------+-----------+-------+
+|                  Site Type                 |  Used | Fixed | Available | Util% |
++--------------------------------------------+-------+-------+-----------+-------+
+| Slice                                      | 12450 |     0 |     13300 | 93.61 |
+|   SLICEL                                   |  8390 |     0 |           |       |
+|   SLICEM                                   |  4060 |     0 |           |       |
+| LUT as Logic                               | 30838 | 21098 |     53200 | 57.97 |
+|   using O5 output only                     |     9 |       |           |       |
+|   using O6 output only                     | 22821 |       |           |       |
+|   using O5 and O6                          |  8008 |       |           |       |
+| LUT as Memory                              |  1520 |   890 |     17400 |  8.74 |
+|   LUT as Distributed RAM                   |    42 |    42 |           |       |
+|     using O5 output only                   |     0 |       |           |       |
+|     using O6 output only                   |     2 |       |           |       |
+|     using O5 and O6                        |    40 |       |           |       |
+|   LUT as Shift Register                    |  1478 |   848 |           |       |
+|     using O5 output only                   |   567 |       |           |       |
+|     using O6 output only                   |   389 |       |           |       |
+|     using O5 and O6                        |   522 |       |           |       |
+| Slice Registers                            | 49162 |     0 |    106400 | 46.20 |
+|   Register driven from within the Slice    | 20998 |       |           |       |
+|   Register driven from outside the Slice   | 28164 |       |           |       |
+|     LUT in front of the register is unused | 17154 |       |           |       |
+|     LUT in front of the register is used   | 11010 |       |           |       |
+| Unique Control Sets                        |  1863 |       |     13300 | 14.01 |
++--------------------------------------------+-------+-------+-----------+-------+
+* * Note: Available Control Sets calculated as Slice * 1, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   83 |     0 |       140 | 59.29 |
+|   RAMB36/FIFO*    |   71 |    48 |       140 | 50.71 |
+|     RAMB36E1 only |   71 |       |           |       |
+|   RAMB18          |   24 |    11 |       280 |  8.57 |
+|     RAMB18E1 only |   24 |       |           |       |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   93 |    73 |       220 | 42.27 |
+|   DSP48E1 only |   93 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+--------+
+|          Site Type          | Used | Fixed | Available |  Util% |
++-----------------------------+------+-------+-----------+--------+
+| Bonded IOB                  |   30 |    30 |       125 |  24.00 |
+|   IOB Master Pads           |   14 |       |           |        |
+|   IOB Slave Pads            |   14 |       |           |        |
+| Bonded IPADs                |    0 |     0 |         2 |   0.00 |
+| Bonded IOPADs               |  130 |   130 |       130 | 100.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |   0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |   0.00 |
+| IDELAYCTRL                  |    1 |     1 |         4 |  25.00 |
+| IBUFDS                      |    4 |     4 |       121 |   3.31 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    3 |     3 |       200 |   1.50 |
+|   IDELAYE2 only             |    3 |     3 |           |        |
+| ILOGIC                      |    6 |     6 |       125 |   4.80 |
+|   ISERDES                   |    6 |     6 |           |        |
+| OLOGIC                      |    8 |     8 |       125 |   6.40 |
+|   OSERDES                   |    8 |     8 |           |        |
++-----------------------------+------+-------+-----------+--------+
+
+
+6. Clocking
+-----------
+
++--------------+------+-------+-----------+-------+
+|   Site Type  | Used | Fixed | Available | Util% |
++--------------+------+-------+-----------+-------+
+| BUFGCTRL     |    3 |     3 |        32 |  9.38 |
+| BUFIO        |    2 |     2 |        16 | 12.50 |
+|   BUFIO only |    2 |     2 |           |       |
+| MMCME2_ADV   |    2 |     2 |         4 | 50.00 |
+| PLLE2_ADV    |    0 |     0 |         4 |  0.00 |
+| BUFMRCE      |    0 |     0 |         8 |  0.00 |
+| BUFHCE       |    0 |     0 |        72 |  0.00 |
+| BUFR         |    2 |     2 |        16 | 12.50 |
++--------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++------------+-------+----------------------+
+|  Ref Name  |  Used |  Functional Category |
++------------+-------+----------------------+
+| FDRE       | 47621 |         Flop & Latch |
+| LUT6       |  9683 |                  LUT |
+| LUT3       |  8137 |                  LUT |
+| LUT4       |  7754 |                  LUT |
+| LUT5       |  6503 |                  LUT |
+| LUT2       |  5156 |                  LUT |
+| CARRY4     |  1975 |           CarryLogic |
+| SRL16E     |  1791 |   Distributed Memory |
+| LUT1       |  1613 |                  LUT |
+| FDSE       |  1358 |         Flop & Latch |
+| MUXF7      |  1329 |                MuxFx |
+| MUXF8      |   398 |                MuxFx |
+| SRLC32E    |   209 |   Distributed Memory |
+| BIBUF      |   130 |                   IO |
+| FDCE       |   128 |         Flop & Latch |
+| DSP48E1    |    93 |     Block Arithmetic |
+| RAMB36E1   |    71 |         Block Memory |
+| RAMD32     |    62 |   Distributed Memory |
+| FDPE       |    55 |         Flop & Latch |
+| RAMB18E1   |    24 |         Block Memory |
+| RAMS32     |    20 |   Distributed Memory |
+| OSERDESE2  |     8 |                   IO |
+| IBUF       |     8 |                   IO |
+| OBUF       |     6 |                   IO |
+| ISERDESE2  |     6 |                   IO |
+| OBUFDS     |     4 |                   IO |
+| IBUFDS     |     4 |                   IO |
+| IDELAYE2   |     3 |                   IO |
+| BUFG       |     3 |                Clock |
+| OBUFT      |     2 |                   IO |
+| MMCME2_ADV |     2 |                Clock |
+| BUFR       |     2 |                Clock |
+| BUFIO      |     2 |                Clock |
+| PS7        |     1 | Specialized Resource |
+| IDELAYCTRL |     1 |                   IO |
++------------+-------+----------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++--------------------------------------------------------+------+
+|                        Ref Name                        | Used |
++--------------------------------------------------------+------+
+| video_cp_xbar_1                                        |    1 |
+| video_cp_xbar_0                                        |    1 |
+| video_cp_vtc_out_0                                     |    1 |
+| video_cp_vtc_in_0                                      |    1 |
+| video_cp_v_vid_in_axi4s_0_0                            |    1 |
+| video_cp_v_axi4s_vid_out_0                             |    1 |
+| video_cp_tier2_xbar_3_0                                |    1 |
+| video_cp_tier2_xbar_2_0                                |    1 |
+| video_cp_tier2_xbar_1_0                                |    1 |
+| video_cp_tier2_xbar_0_0                                |    1 |
+| video_cp_system_interrupts_0                           |    1 |
+| video_cp_switches_gpio_0                               |    1 |
+| video_cp_s00_regslice_0                                |    1 |
+| video_cp_rst_ps7_0_fclk1_0                             |    1 |
+| video_cp_rst_ps7_0_fclk0_0                             |    1 |
+| video_cp_rgb2hsv_accel_0                               |    1 |
+| video_cp_rgb2gray_accel_0                              |    1 |
+| video_cp_ps_user_soft_reset_0                          |    1 |
+| video_cp_ps7_0_0                                       |    1 |
+| video_cp_proc_sys_reset_pixelclk_0                     |    1 |
+| video_cp_pr_join_out0_0                                |    1 |
+| video_cp_pr_join_in1_0                                 |    1 |
+| video_cp_pr_join_in0_0                                 |    1 |
+| video_cp_pr_join_fifo_in_1_0                           |    1 |
+| video_cp_pr_join_fifo_in_0_0                           |    1 |
+| video_cp_pr_fork_out1_0                                |    1 |
+| video_cp_pr_fork_out0_0                                |    1 |
+| video_cp_pr_fork_in0_0                                 |    1 |
+| video_cp_pr_1_out1_0                                   |    1 |
+| video_cp_pr_1_out0_0                                   |    1 |
+| video_cp_pr_1_in1_0                                    |    1 |
+| video_cp_pr_1_in0_0                                    |    1 |
+| video_cp_pr_0_out1_0                                   |    1 |
+| video_cp_pr_0_out0_0                                   |    1 |
+| video_cp_pr_0_in1_0                                    |    1 |
+| video_cp_pr_0_in0_0                                    |    1 |
+| video_cp_pixel_unpack_0                                |    1 |
+| video_cp_pixel_pack_0                                  |    1 |
+| video_cp_pipeline_control_0                            |    1 |
+| video_cp_m09_regslice_0                                |    1 |
+| video_cp_m08_regslice_0                                |    1 |
+| video_cp_m07_regslice_0                                |    1 |
+| video_cp_m06_regslice_0                                |    1 |
+| video_cp_m05_regslice_0                                |    1 |
+| video_cp_m04_regslice_0                                |    1 |
+| video_cp_m03_regslice_0                                |    1 |
+| video_cp_m02_regslice_0                                |    1 |
+| video_cp_m01_regslice_0                                |    1 |
+| video_cp_m00_regslice_0                                |    1 |
+| video_cp_lut_accel_0                                   |    1 |
+| video_cp_leds_gpio_0                                   |    1 |
+| video_cp_hdmi_tx_0                                     |    1 |
+| video_cp_hdmi_out_hpd_video_0                          |    1 |
+| video_cp_gray2rgb_accel_0                              |    1 |
+| video_cp_filter2d_accel_0                              |    1 |
+| video_cp_dvi2rgb_0                                     |    1 |
+| video_cp_dfx_decoupler_pr_join_0                       |    1 |
+| video_cp_dfx_decoupler_pr_fork_0                       |    1 |
+| video_cp_dfx_decoupler_pr_1_0                          |    1 |
+| video_cp_dfx_decoupler_pr_0_0                          |    1 |
+| video_cp_colorthresholding_accel_0                     |    1 |
+| video_cp_color_swap_0                                  |    1 |
+| video_cp_color_convert_1                               |    1 |
+| video_cp_color_convert_0                               |    1 |
+| video_cp_btns_gpio_0                                   |    1 |
+| video_cp_axis_switch_0                                 |    1 |
+| video_cp_axis_register_slice_1                         |    1 |
+| video_cp_axis_register_slice_0                         |    1 |
+| video_cp_axis_fifo_hdmi_out_0                          |    1 |
+| video_cp_axis_dwidth_48_24_0                           |    1 |
+| video_cp_axis_dwidth_24_48_0                           |    1 |
+| video_cp_axi_vdma_0                                    |    1 |
+| video_cp_axi_gpio_hdmiin_0                             |    1 |
+| video_cp_axi_dynclk_0                                  |    1 |
+| video_cp_auto_us_0                                     |    1 |
+| video_cp_auto_pc_5                                     |    1 |
+| video_cp_auto_pc_4                                     |    1 |
+| video_cp_auto_pc_3                                     |    1 |
+| video_cp_auto_pc_2                                     |    1 |
+| video_cp_auto_pc_1                                     |    1 |
+| video_cp_auto_pc_0                                     |    1 |
+| video_cp_auto_cc_9                                     |    1 |
+| video_cp_auto_cc_8                                     |    1 |
+| video_cp_auto_cc_7                                     |    1 |
+| video_cp_auto_cc_6                                     |    1 |
+| video_cp_auto_cc_5                                     |    1 |
+| video_cp_auto_cc_4                                     |    1 |
+| video_cp_auto_cc_3                                     |    1 |
+| video_cp_auto_cc_2                                     |    1 |
+| video_cp_auto_cc_17                                    |    1 |
+| video_cp_auto_cc_16                                    |    1 |
+| video_cp_auto_cc_15                                    |    1 |
+| video_cp_auto_cc_14                                    |    1 |
+| video_cp_auto_cc_13                                    |    1 |
+| video_cp_auto_cc_12                                    |    1 |
+| video_cp_auto_cc_11                                    |    1 |
+| video_cp_auto_cc_10                                    |    1 |
+| video_cp_auto_cc_1                                     |    1 |
+| video_cp_auto_cc_0                                     |    1 |
+| composable_pr_join_absdiff_absdiff_accel_0             |    1 |
+| composable_pr_join_absdiff                             |    1 |
+| composable_pr_fork_rgb2xyz_rgb2xyz_accel_0             |    1 |
+| composable_pr_fork_rgb2xyz                             |    1 |
+| composable_pr_1_cornerharris_fifo_cornerHarris_accel_0 |    1 |
+| composable_pr_1_cornerharris_fifo_axis_data_fifo_0_0   |    1 |
+| composable_pr_1_cornerharris_fifo                      |    1 |
+| composable_pr_0_fast_fifo_fast_accel_0                 |    1 |
+| composable_pr_0_fast_fifo_axis_data_fifo_0_0           |    1 |
+| composable_pr_0_fast_fifo                              |    1 |
++--------------------------------------------------------+------+
+
+

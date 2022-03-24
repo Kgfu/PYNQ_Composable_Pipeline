@@ -1,0 +1,681 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:39:01 2022
+# Process ID: 2326312
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1
+# Command line: vivado -log composable_pr_0_fast_fifo_fast_accel_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source composable_pr_0_fast_fifo_fast_accel_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/composable_pr_0_fast_fifo_fast_accel_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source composable_pr_0_fast_fifo_fast_accel_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top composable_pr_0_fast_fifo_fast_accel_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2326375
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2395.191 ; gain = 0.000 ; free physical = 10323 ; free virtual = 56312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'composable_pr_0_fast_fifo_fast_accel_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_0_fast_fifo/ip/composable_pr_0_fast_fifo_fast_accel_0/synth/composable_pr_0_fast_fifo_fast_accel_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 6'b010000 
+	Parameter ADDR_ROWS_CTRL bound to: 6'b010100 
+	Parameter ADDR_COLS_DATA_0 bound to: 6'b011000 
+	Parameter ADDR_COLS_CTRL bound to: 6'b011100 
+	Parameter ADDR_THRESHOLD_DATA_0 bound to: 6'b100000 
+	Parameter ADDR_THRESHOLD_CTRL bound to: 6'b100100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_control_s_axi.v:207]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_control_s_axi' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_Block_ZN2xf2cv3MatILi0ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc9' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_Block_ZN2xf2cv3MatILi0ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc9.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_Block_ZN2xf2cv3MatILi0ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc9' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_Block_ZN2xf2cv3MatILi0ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc9.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_AXIvideo2xfMat_24_0_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_AXIvideo2xfMat_24_0_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_regslice_both' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_regslice_both__parameterized0' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_regslice_both__parameterized1' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_AXIvideo2xfMat_24_0_1080_1920_1_s' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_AXIvideo2xfMat_24_0_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fast_1_0_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fast_1_0_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 12'b000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 12'b000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 12'b000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 12'b000000001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 12'b000000010000 
+	Parameter ap_ST_fsm_state8 bound to: 12'b000000100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 12'b000001000000 
+	Parameter ap_ST_fsm_state11 bound to: 12'b000010000000 
+	Parameter ap_ST_fsm_state12 bound to: 12'b000100000000 
+	Parameter ap_ST_fsm_state13 bound to: 12'b001000000000 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 12'b010000000000 
+	Parameter ap_ST_fsm_state37 bound to: 12'b100000000000 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0.v:46]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1920 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1920 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0.v:46]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_mux_73_13_1_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_73_13_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter din2_WIDTH bound to: 13 - type: integer 
+	Parameter din3_WIDTH bound to: 13 - type: integer 
+	Parameter din4_WIDTH bound to: 13 - type: integer 
+	Parameter din5_WIDTH bound to: 13 - type: integer 
+	Parameter din6_WIDTH bound to: 13 - type: integer 
+	Parameter din7_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_mux_73_13_1_1' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_73_13_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_mux_73_8_1_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_73_8_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 8 - type: integer 
+	Parameter din4_WIDTH bound to: 8 - type: integer 
+	Parameter din5_WIDTH bound to: 8 - type: integer 
+	Parameter din6_WIDTH bound to: 8 - type: integer 
+	Parameter din7_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_mux_73_8_1_1' (8#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_73_8_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 12'b000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 12'b000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 12'b000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 12'b000000001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 12'b000000010000 
+	Parameter ap_ST_fsm_state8 bound to: 12'b000000100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 12'b000001000000 
+	Parameter ap_ST_fsm_state13 bound to: 12'b000010000000 
+	Parameter ap_ST_fsm_state14 bound to: 12'b000100000000 
+	Parameter ap_ST_fsm_state15 bound to: 12'b001000000000 
+	Parameter ap_ST_fsm_pp3_stage0 bound to: 12'b010000000000 
+	Parameter ap_ST_fsm_state23 bound to: 12'b100000000000 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_mux_32_8_1_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_32_8_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_mux_32_8_1_1' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_32_8_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_mux_32_13_1_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_32_13_1_1.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 13 - type: integer 
+	Parameter din2_WIDTH bound to: 13 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_mux_32_13_1_1' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_mux_32_13_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d2_S_shiftReg' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d2_S' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w11_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w11_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w11_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w11_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 11 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w11_d2_S_shiftReg' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w11_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w11_d2_S' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w11_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0_shiftReg' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s' (19#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fast_1_0_1080_1920_1_s' (20#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fast_1_0_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_xfMat2AXIvideo_24_0_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xfMat2AXIvideo_24_0_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_xfMat2AXIvideo_24_0_1080_1920_1_s' (21#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_xfMat2AXIvideo_24_0_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w32_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w32_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w32_d2_S_shiftReg' (22#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w32_d2_S' (23#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w32_d4_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w32_d4_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w32_d4_S_shiftReg' (24#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w32_d4_S' (25#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d3_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d3_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d3_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d3_S.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d3_S_shiftReg' (26#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d3_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d3_S' (27#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d3_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d2_S_x' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S_x.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_fifo_w8_d2_S_x_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S_x.v:8]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d2_S_x_shiftReg' (28#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S_x.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_fifo_w8_d2_S_x' (29#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_fifo_w8_d2_S_x.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0_shiftReg' (30#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0' (31#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_AXIvideo2xfMat_24_0_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_fast_1_0_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_fast_1_0_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_fast_1_0_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_fast_1_0_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b011 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_fast_1_0_1080_1920_1_U0_shiftReg' (32#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_fast_1_0_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_fast_1_0_1080_1920_1_U0' (33#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_fast_1_0_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0_shiftReg' (34#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0' (35#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel_start_for_xfMat2AXIvideo_24_0_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'fast_accel' (36#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.srcs/sources_1/bd/composable_pr_0_fast_fifo/ipshared/4b9d/hdl/verilog/fast_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'composable_pr_0_fast_fifo_fast_accel_0' (37#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_0_fast_fifo/ip/composable_pr_0_fast_fifo_fast_accel_0/synth/composable_pr_0_fast_fifo_fast_accel_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2456.070 ; gain = 60.879 ; free physical = 11715 ; free virtual = 57706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2473.883 ; gain = 78.691 ; free physical = 11597 ; free virtual = 57587
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2473.883 ; gain = 78.691 ; free physical = 11597 ; free virtual = 57587
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2473.883 ; gain = 0.000 ; free physical = 11564 ; free virtual = 57554
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_0_fast_fifo/ip/composable_pr_0_fast_fifo_fast_accel_0/constraints/fast_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/composable_pr_0_fast_fifo/ip/composable_pr_0_fast_fifo_fast_accel_0/constraints/fast_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2638.695 ; gain = 0.000 ; free physical = 12246 ; free virtual = 58236
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.40 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2638.695 ; gain = 0.000 ; free physical = 12220 ; free virtual = 58210
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 11003 ; free virtual = 56994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 11003 ; free virtual = 56994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 11002 ; free virtual = 56992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'fast_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'fast_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'fast_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'fast_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 10580 ; free virtual = 56574
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U31'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U33'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U35'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U37'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U39'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U29' (fast_accel_mux_73_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/mux_73_8_1_1_U41'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/mux_32_8_1_1_U55' (fast_accel_mux_32_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/mux_32_8_1_1_U57'
+INFO: [Synth 8-223] decloning instance 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/mux_32_8_1_1_U55' (fast_accel_mux_32_8_1_1) to 'inst/fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/mux_32_8_1_1_U59'
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_0_1080_1920_1_U0/regslice_both_AXI_video_strm_V_id_V_U' (fast_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_0_1080_1920_1_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   13 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 7     
+	   2 Input   11 Bit       Adders := 8     
+	   3 Input    9 Bit       Adders := 16    
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 10    
+	   2 Input    4 Bit       Adders := 6     
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 12    
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               62 Bit    Registers := 1     
+	               61 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	               24 Bit    Registers := 10    
+	               13 Bit    Registers := 11    
+	               12 Bit    Registers := 16    
+	               11 Bit    Registers := 32    
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 243   
+	                8 Bit    Registers := 171   
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 43    
+	                2 Bit    Registers := 45    
+	                1 Bit    Registers := 486   
++---RAMs : 
+	              15K Bit	(1920 X 8 bit)          RAMs := 10    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 2     
+	   8 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 10    
+	   2 Input   13 Bit        Muxes := 18    
+	   2 Input   12 Bit        Muxes := 2     
+	   3 Input   12 Bit        Muxes := 2     
+	   2 Input   11 Bit        Muxes := 16    
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 95    
+	   3 Input    8 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 230   
+	   2 Input    7 Bit        Muxes := 2     
+	   3 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 8     
+	   4 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   8 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 8     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 40    
+	   4 Input    2 Bit        Muxes := 14    
+	   2 Input    1 Bit        Muxes := 161   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 10270 ; free virtual = 56279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                        | RTL Object                                                                                                                                                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_0_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_1_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_2_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_3_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_4_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_5_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_6_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_0_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_1_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_2_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 10389 ; free virtual = 56402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2638.695 ; gain = 243.504 ; free physical = 10169 ; free virtual = 56187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                                                                        | RTL Object                                                                                                                                                                                                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_0_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_1_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_2_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_3_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_4_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_5_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/\fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0  | buf_V_6_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg                                                                                                                            | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_0_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_1_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst                                                                                                                               | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/buf_V_2_U/fast_accel_xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_buf_V_0_ram_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 2646.703 ; gain = 251.512 ; free physical = 10403 ; free virtual = 56432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 10217 ; free virtual = 56243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 10214 ; free virtual = 56240
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 11079 ; free virtual = 57104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 11075 ; free virtual = 57104
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 11066 ; free virtual = 57091
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 11064 ; free virtual = 57089
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                                                                                                                                                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/icmp_ln882_2_reg_5333_pp3_iter5_reg_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/icmp_ln882_2_reg_5333_pp3_iter21_reg_reg[0]  | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln425_reg_5372_pp3_iter18_reg_reg[0]     | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/trunc_ln408_reg_5322_pp3_iter4_reg_reg[2]    | 3      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_3_reg_6271_pp3_iter15_reg_reg[0]   | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_3_reg_6271_pp3_iter18_reg_reg[0]   | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_2_reg_6265_pp3_iter15_reg_reg[0]   | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_1_reg_6259_pp3_iter14_reg_reg[0]   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_reg_6253_pp3_iter14_reg_reg[0]     | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_15_reg_6347_pp3_iter13_reg_reg[0]  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_4_reg_6277_pp3_iter16_reg_reg[0]   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/or_ln202_7_reg_6691_pp3_iter18_reg_reg[0]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_5_reg_6283_pp3_iter16_reg_reg[0]   | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_7_reg_6294_pp3_iter17_reg_reg[0]   | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/and_ln192_6_reg_6289_pp3_iter17_reg_reg[0]   | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/icmp_ln882_1_reg_5378_pp3_iter20_reg_reg[0]  | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_7_reg_5645_pp3_iter17_reg_reg[8]  | 9      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln60_7_reg_6441_pp3_iter17_reg_reg[8] | 7      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_14_reg_5815_pp3_iter16_reg_reg[8] | 7      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_5_reg_5623_pp3_iter15_reg_reg[8]  | 7      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln60_6_reg_6425_pp3_iter15_reg_reg[8] | 5      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_12_reg_5787_pp3_iter15_reg_reg[8] | 6      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_3_reg_5601_pp3_iter14_reg_reg[8]  | 6      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln60_5_reg_6409_pp3_iter14_reg_reg[8] | 4      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_10_reg_5761_pp3_iter14_reg_reg[8] | 5      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_1_reg_5579_pp3_iter13_reg_reg[8]  | 5      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln60_4_reg_6393_pp3_iter13_reg_reg[8] | 3      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_8_reg_5656_pp3_iter12_reg_reg[8]  | 4      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/sub_ln1347_6_reg_5634_pp3_iter11_reg_reg[8]  | 3      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln59_7_reg_6433_pp3_iter16_reg_reg[8] | 6      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln59_6_reg_6417_pp3_iter15_reg_reg[8] | 5      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfast7x7_0_1080_1920_0_1_1_1923_7_49_5_U0/select_ln59_5_reg_6401_pp3_iter14_reg_reg[8] | 4      | 9     | NO           | NO                 | YES               | 9      | 0       | 
+|fast_accel  | fast_1_0_1080_1920_1_U0/grp_xFFastCornerDetection_0_1080_1920_0_1_1_12_1_s_fu_52/xFfastnms_0_1080_1920_0_1_1_1921_3_9_6_U0/icmp_ln878_2_reg_1261_pp3_iter4_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[2] | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   494|
+|2     |LUT1     |   127|
+|3     |LUT2     |   549|
+|4     |LUT3     |  1057|
+|5     |LUT4     |  1366|
+|6     |LUT5     |   866|
+|7     |LUT6     |  1113|
+|8     |MUXF7    |    29|
+|9     |RAMB18E1 |    10|
+|10    |SRL16E   |   235|
+|11    |FDRE     |  4389|
+|12    |FDSE     |    45|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.672 ; gain = 255.480 ; free physical = 11067 ; free virtual = 57092
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2650.672 ; gain = 90.668 ; free physical = 11106 ; free virtual = 57131
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 2650.680 ; gain = 255.480 ; free physical = 11106 ; free virtual = 57131
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2650.680 ; gain = 0.000 ; free physical = 11106 ; free virtual = 57132
+INFO: [Netlist 29-17] Analyzing 533 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2682.688 ; gain = 0.000 ; free physical = 10907 ; free virtual = 56933
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:16 . Memory (MB): peak = 2682.688 ; gain = 287.617 ; free physical = 11054 ; free virtual = 57079
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/composable_pr_0_fast_fifo_fast_accel_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP composable_pr_0_fast_fifo_fast_accel_0, cache-ID = be3eca2d1ca36b06
+INFO: [Coretcl 2-1174] Renamed 64 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/composable_pr_0_fast_fifo_fast_accel_0_synth_1/composable_pr_0_fast_fifo_fast_accel_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file composable_pr_0_fast_fifo_fast_accel_0_utilization_synth.rpt -pb composable_pr_0_fast_fifo_fast_accel_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:40:33 2022...
