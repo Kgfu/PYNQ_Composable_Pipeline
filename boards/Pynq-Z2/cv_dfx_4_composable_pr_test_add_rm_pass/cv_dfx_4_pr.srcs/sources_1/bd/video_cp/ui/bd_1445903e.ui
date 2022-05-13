@@ -1,0 +1,87 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.440699",
+   "Default View_TopLeft":"672,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port M00_AXIS -pg 1 -lvl 9 -x 3240 -y 780 -defaultsOSRD
+preplace port M01_AXIS -pg 1 -lvl 9 -x 3240 -y 900 -defaultsOSRD
+preplace port S00_AXIS -pg 1 -lvl 0 -x -80 -y 1060 -defaultsOSRD
+preplace port S01_AXIS -pg 1 -lvl 0 -x -80 -y 1080 -defaultsOSRD
+preplace port S14_AXI -pg 1 -lvl 0 -x -80 -y 1270 -defaultsOSRD
+preplace port S15_AXI -pg 1 -lvl 0 -x -80 -y 930 -defaultsOSRD
+preplace port S18_AXI -pg 1 -lvl 0 -x -80 -y 1830 -defaultsOSRD
+preplace port S19_AXI -pg 1 -lvl 0 -x -80 -y 1650 -defaultsOSRD
+preplace port S20_AXI -pg 1 -lvl 0 -x -80 -y 1480 -defaultsOSRD
+preplace port S22_AXI -pg 1 -lvl 0 -x -80 -y 500 -defaultsOSRD
+preplace port S23_AXI -pg 1 -lvl 0 -x -80 -y 520 -defaultsOSRD
+preplace port S24_AXI -pg 1 -lvl 0 -x -80 -y 540 -defaultsOSRD
+preplace port S25_AXI -pg 1 -lvl 0 -x -80 -y 560 -defaultsOSRD
+preplace port clk_142M -pg 1 -lvl 0 -x -80 -y 950 -defaultsOSRD
+preplace port periph_resetn_clk142M -pg 1 -lvl 0 -x -80 -y 970 -defaultsOSRD
+preplace inst axis_dwidth_24_48 -pg 1 -lvl 6 -x 2630 -y 860 -defaultsOSRD
+preplace inst axis_dwidth_48_24 -pg 1 -lvl 8 -x 3110 -y 900 -defaultsOSRD
+preplace inst axis_fifo_hdmi_out -pg 1 -lvl 7 -x 2870 -y 880 -defaultsOSRD
+preplace inst axis_switch -pg 1 -lvl 5 -x 2250 -y 920 -defaultsOSRD
+preplace inst dfx_decouplers -pg 1 -lvl 4 -x 1610 -y 720 -defaultsOSRD
+preplace inst gray2rgb_accel -pg 1 -lvl 4 -x 1610 -y 1510 -defaultsOSRD
+preplace inst pipeline_control -pg 1 -lvl 1 -x 110 -y 950 -defaultsOSRD
+preplace inst ps_user_soft_reset -pg 1 -lvl 2 -x 490 -y 1170 -defaultsOSRD
+preplace inst rgb2gray_accel -pg 1 -lvl 4 -x 1610 -y 1860 -defaultsOSRD
+preplace inst rgb2hsv_accel -pg 1 -lvl 4 -x 1610 -y 1680 -defaultsOSRD
+preplace inst pr_0 -pg 1 -lvl 3 -x 1010 -y 140 -defaultsOSRD
+preplace inst pr_1 -pg 1 -lvl 3 -x 1010 -y 390 -defaultsOSRD
+preplace netloc aclk_1 1 0 8 -50 1050 280 820 700 820 1230 1080 1980 590 2480 770 2740 960 2990J
+preplace netloc axi_control_gpio_io_o 1 1 1 260 930n
+preplace netloc dfx_decouplers_dfx_status 1 1 4 NJ 970 670J 990 NJ 990 1810
+preplace netloc pipeline_control_gpio2_io_o 1 1 3 270J 930 NJ 930 1200
+preplace netloc rst_ps7_0_fclk1_peripheral_aresetn 1 0 5 -60 1090 300 1070 NJ 1070 NJ 1070 1880
+preplace netloc soft_peripheral_aresetn 1 2 6 680 940 1260 1010 1900J 600 2460 940 2750 970 3000J
+preplace netloc Conn4 1 0 4 NJ 540 NJ 540 NJ 540 1210J
+preplace netloc Conn5 1 0 4 NJ 560 NJ 560 NJ 560 1190J
+preplace netloc Conn8 1 0 4 NJ 1830 NJ 1830 NJ 1830 NJ
+preplace netloc Conn9 1 0 4 NJ 1650 NJ 1650 NJ 1650 NJ
+preplace netloc Conn10 1 0 5 -50J 1070 270J 1020 NJ 1020 NJ 1020 1890J
+preplace netloc Conn12 1 0 4 NJ 1480 NJ 1480 NJ 1480 NJ
+preplace netloc Conn3 1 0 4 NJ 520 NJ 520 NJ 520 1250J
+preplace netloc Conn2 1 0 4 NJ 500 NJ 500 690J 530 1240J
+preplace netloc axis_fifo_hdmi_out_M_AXIS 1 7 1 N 880
+preplace netloc axis_dwidth_48_24_M_AXIS 1 8 1 NJ 900
+preplace netloc Conn14 1 0 1 NJ 930
+preplace netloc axis_dwidth_24_48_M_AXIS 1 6 1 N 860
+preplace netloc axis_switch_M00_AXIS 1 5 4 NJ 780 NJ 780 NJ 780 NJ
+preplace netloc axis_switch_M01_AXIS 1 5 1 2470 800n
+preplace netloc axis_switch_M02_AXIS 1 3 3 1290 1090 1970J 650 2400
+preplace netloc axis_switch_M03_AXIS 1 3 3 1300 1050 1960J 660 2390
+preplace netloc axis_switch_M04_AXIS 1 3 3 1280 1040 1930J 620 2420
+preplace netloc axis_switch_M06_AXIS 1 3 3 1280 910 1890J 610 2450
+preplace netloc axis_switch_M07_AXIS 1 3 3 1290 920 1910J 630 2440
+preplace netloc axis_switch_M08_AXIS 1 3 3 1270 940 1920J 640 2430
+preplace netloc axis_switch_M09_AXIS 1 3 3 1300 930 1940J 670 2410
+preplace netloc dfx_decoupler_pr_0_s_axi_lite0 1 2 3 710 970 NJ 970 1830
+preplace netloc dfx_decoupler_pr_0_s_axi_lite1 1 2 3 720 980 NJ 980 1820
+preplace netloc dfx_decoupler_pr_1_s_axi_lite0 1 2 3 740 960 NJ 960 1800
+preplace netloc dfx_decoupler_pr_1_s_axi_lite1 1 2 3 750 950 NJ 950 1790
+preplace netloc dfx_decouplers_m_axis_dfx_pr_0_0 1 4 1 1880 600n
+preplace netloc dfx_decouplers_m_axis_dfx_pr_0_1 1 4 1 1850 620n
+preplace netloc dfx_decouplers_m_axis_dfx_pr_1_0 1 4 1 1840 640n
+preplace netloc dfx_decouplers_m_axis_dfx_pr_1_1 1 4 1 1950 660n
+preplace netloc gray2rgb_accel_stream_out 1 4 1 2000 790n
+preplace netloc hdmi_in_M_AXIS 1 0 5 NJ 1060 NJ 1060 NJ 1060 NJ 1060 1990J
+preplace netloc hdmi_out_M_AXIS 1 0 5 NJ 1080 290J 1030 NJ 1030 NJ 1030 1860J
+preplace netloc pr_0_in0_M_AXIS 1 2 3 730 1000 NJ 1000 1870
+preplace netloc pr_0_in1_M_AXIS 1 2 3 770 250 NJ 250 1860
+preplace netloc pr_0_stream_out0 1 3 1 1260 130n
+preplace netloc pr_0_stream_out1 1 3 1 1230 150n
+preplace netloc pr_1_in0_M_AXIS 1 2 3 760 500 NJ 500 1800
+preplace netloc pr_1_in1_M_AXIS 1 2 3 770 510 NJ 510 1790
+preplace netloc pr_1_stream_out0 1 3 1 1220 380n
+preplace netloc pr_1_stream_out1 1 3 1 1200 400n
+preplace netloc rgb2gray_accel_stream_out 1 4 1 2010 770n
+preplace netloc rgb2hsv_accel_stream_out 1 4 1 2020 810n
+levelinfo -pg 1 -80 110 490 1010 1610 2250 2630 2870 3110 3240
+pagesize -pg 1 -db -bbox -sgen -300 0 3360 2310
+"
+}
+0

@@ -1,0 +1,60 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.841374",
+   "Default View_TopLeft":"-250,-14",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDC -pg 1 -lvl 3 -x 800 -y 70 -defaultsOSRD
+preplace port M_AXIS -pg 1 -lvl 3 -x 800 -y 370 -defaultsOSRD
+preplace port S00_AXILite -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port S01_AXILite -pg 1 -lvl 0 -x 0 -y 320 -defaultsOSRD
+preplace port S02_AXILite -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port S03_AXILite -pg 1 -lvl 0 -x 0 -y 490 -defaultsOSRD
+preplace port TMDS_in -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port out_stream -pg 1 -lvl 3 -x 800 -y 520 -defaultsOSRD
+preplace port stream_in_24 -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace port PixelClk -pg 1 -lvl 3 -x 800 -y 110 -defaultsOSRD
+preplace port aPixelClkLckd -pg 1 -lvl 3 -x 800 -y 130 -defaultsOSRD
+preplace port clk_100M -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port clk_142M -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port clk_200M -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port hdmi_in_hpd_irq -pg 1 -lvl 3 -x 800 -y 170 -defaultsOSRD
+preplace port vtc_in_irq -pg 1 -lvl 3 -x 800 -y 190 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -lvl 3 -x 800 -y 150 -defaultsOSRD
+preplace portBus periph_resetn_clk100M -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace portBus periph_resetn_clk142M -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace portBus resetn -pg 1 -lvl 0 -x 0 -y 190 -defaultsOSRD
+preplace portBus vid_io_in_reset -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace inst axis_register_slice -pg 1 -lvl 2 -x 590 -y 370 -defaultsOSRD
+preplace inst color_convert -pg 1 -lvl 1 -x 210 -y 350 -defaultsOSRD
+preplace inst frontend -pg 1 -lvl 2 -x 590 -y 130 -defaultsOSRD
+preplace inst pixel_pack -pg 1 -lvl 2 -x 590 -y 520 -defaultsOSRD
+preplace netloc Net 1 0 2 NJ 110 NJ
+preplace netloc RefClk_1 1 0 2 NJ 150 NJ
+preplace netloc aclk_1 1 0 2 30 440 390
+preplace netloc axi_gpio_video_gpio_io_o 1 2 1 NJ 150
+preplace netloc axi_gpio_video_ip2intc_irpt 1 2 1 NJ 170
+preplace netloc dvi2rgb_PixelClk 1 2 1 NJ 110
+preplace netloc dvi2rgb_aPixelClkLckd 1 2 1 NJ 130
+preplace netloc periph_resetn_clk100M_1 1 0 2 NJ 170 NJ
+preplace netloc resetn_1 1 0 2 NJ 190 NJ
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 2 20 450 400
+preplace netloc v_tc_1_irq 1 2 1 NJ 190
+preplace netloc vid_io_in_reset_1 1 0 2 NJ 210 NJ
+preplace netloc Conn1 1 2 1 NJ 370
+preplace netloc Conn5 1 0 2 NJ 490 NJ
+preplace netloc Conn2 1 0 2 NJ 510 NJ
+preplace netloc Conn3 1 0 2 NJ 70 NJ
+preplace netloc Conn6 1 0 1 NJ 320
+preplace netloc TMDS_1 1 0 2 NJ 90 NJ
+preplace netloc color_convert_stream_out_24 1 1 1 N 350
+preplace netloc frontend_DDC 1 2 1 NJ 70
+preplace netloc frontend_video_out 1 0 3 30 260 NJ 260 780
+preplace netloc pixel_pack_stream_out_32 1 2 1 NJ 520
+preplace netloc ps7_0_axi_periph_M07_AXI 1 0 2 NJ 50 NJ
+levelinfo -pg 1 0 210 590 800
+pagesize -pg 1 -db -bbox -sgen -250 -10 980 610
+"
+}
+

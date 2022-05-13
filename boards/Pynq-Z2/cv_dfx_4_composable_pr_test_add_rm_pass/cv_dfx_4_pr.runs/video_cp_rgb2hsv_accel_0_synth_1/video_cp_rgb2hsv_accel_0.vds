@@ -1,0 +1,609 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:31:32 2022
+# Process ID: 2321385
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1
+# Command line: vivado -log video_cp_rgb2hsv_accel_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_cp_rgb2hsv_accel_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/video_cp_rgb2hsv_accel_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source video_cp_rgb2hsv_accel_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top video_cp_rgb2hsv_accel_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2321483
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2395.160 ; gain = 0.000 ; free physical = 10349 ; free virtual = 56244
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'video_cp_rgb2hsv_accel_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_rgb2hsv_accel_0/synth/video_cp_rgb2hsv_accel_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel.v:12]
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 5'b00000 
+	Parameter ADDR_GIE bound to: 5'b00100 
+	Parameter ADDR_IER bound to: 5'b01000 
+	Parameter ADDR_ISR bound to: 5'b01100 
+	Parameter ADDR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_ROWS_CTRL bound to: 5'b10100 
+	Parameter ADDR_COLS_DATA_0 bound to: 5'b11000 
+	Parameter ADDR_COLS_CTRL bound to: 5'b11100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_control_s_axi.v:199]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_control_s_axi' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_Block_ZN2xf2cv3MatILi9ELi1080ELi1920ELi1ELi2EEC2Eii_exit1_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_regslice_both' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_regslice_both__parameterized0' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_regslice_both__parameterized1' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_AXIvideo2xfMat_24_9_1080_1920_1_s' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_AXIvideo2xfMat_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_state5 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state6 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state23 bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:80]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 769 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:6]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 769 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom.dat' is read successfully [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:31]
+INFO: [Synth 8-3876] $readmem data file './rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom.dat' is read successfully [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1.v:80]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb_rom' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb_rom.dat' is read successfully [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb_rom' (7#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb' (8#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_bkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud.v:39]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 256 - type: integer 
+	Parameter AddressWidth bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud_rom' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud.v:6]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 8 - type: integer 
+	Parameter MEM_SIZE bound to: 256 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud_rom.dat' is read successfully [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud_rom' (9#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud' (10#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_void_rgb2hsv_9_1080_1920_1_Mat_9_1080_1920_1_2_Mat_9_cud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_mul_32ns_32ns_64_5_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mul_32ns_32ns_64_5_1.v:35]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mul_32ns_32ns_64_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0' (11#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mul_32ns_32ns_64_5_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_mul_32ns_32ns_64_5_1' (12#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mul_32ns_32ns_64_5_1.v:35]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1.v:46]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 20 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 13 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0' (13#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1' (14#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1.v:46]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1.v:52]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 13 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter din2_WIDTH bound to: 17 - type: integer 
+	Parameter din3_WIDTH bound to: 13 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1' (15#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1' (16#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s' (17#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 5'b00001 
+	Parameter ap_ST_fsm_state2 bound to: 5'b00010 
+	Parameter ap_ST_fsm_state3 bound to: 5'b00100 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 5'b01000 
+	Parameter ap_ST_fsm_state7 bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_xfMat2AXIvideo_24_9_1080_1920_1_s' (18#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_xfMat2AXIvideo_24_9_1080_1920_1_s.v:10]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w32_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w32_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w32_d2_S_shiftReg' (19#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w32_d2_S' (20#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w32_d4_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d4_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w32_d4_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d4_S.v:8]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w32_d4_S_shiftReg' (21#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d4_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w32_d4_S' (22#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w32_d4_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w24_d2_S' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w24_d2_S.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_fifo_w24_d2_S_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w24_d2_S.v:8]
+	Parameter DATA_WIDTH bound to: 24 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w24_d2_S_shiftReg' (23#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w24_d2_S.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_fifo_w24_d2_S' (24#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_fifo_w24_d2_S.v:42]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0_shiftReg' (25#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0' (26#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_AXIvideo2xfMat_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0_shiftReg' (27#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0' (28#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_xfMat2AXIvideo_24_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0_shiftReg' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0_shiftReg' (29#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0' (30#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel_start_for_rgb2hsv_9_1080_1920_1_U0.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2hsv_accel' (31#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/5b8d/hdl/verilog/rgb2hsv_accel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'video_cp_rgb2hsv_accel_0' (32#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_rgb2hsv_accel_0/synth/video_cp_rgb2hsv_accel_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2395.160 ; gain = 0.000 ; free physical = 10559 ; free virtual = 56457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2400.977 ; gain = 5.816 ; free physical = 10147 ; free virtual = 56040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2400.977 ; gain = 5.816 ; free physical = 10147 ; free virtual = 56040
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2400.977 ; gain = 0.000 ; free physical = 10097 ; free virtual = 55990
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_rgb2hsv_accel_0/constraints/rgb2hsv_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_rgb2hsv_accel_0/constraints/rgb2hsv_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2562.789 ; gain = 0.000 ; free physical = 10575 ; free virtual = 56468
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2562.789 ; gain = 0.000 ; free physical = 10572 ; free virtual = 56465
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 11374 ; free virtual = 57267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 11373 ; free virtual = 57266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 11373 ; free virtual = 57266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'rgb2hsv_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'rgb2hsv_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'rgb2hsv_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'rgb2hsv_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 11242 ; free virtual = 57137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_id_V_U' (rgb2hsv_accel_regslice_both__parameterized1) to 'inst/xfMat2AXIvideo_24_9_1080_1920_1_U0/regslice_both_AXI_video_strm_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 5     
+	   2 Input    8 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 2     
+	   4 Input    8 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 8     
++---XORs : 
+	   2 Input      9 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 22    
+	               24 Bit    Registers := 14    
+	               18 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 6     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 13    
+	                8 Bit    Registers := 63    
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 11    
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 142   
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---ROMs : 
+	                    ROMs := 4     
++---Muxes : 
+	 257 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 4     
+	   2 Input   24 Bit        Muxes := 10    
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	   4 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 19    
+	   4 Input    2 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 111   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg, operation Mode is: (A''*B'')'.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg, operation Mode is: (PCIN>>17)+(A''*B2)'.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/b_reg0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product, operation Mode is: PCIN+(A''*B'')'.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/a_reg0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/a_reg0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/b_reg0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff0_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: register mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff1_reg is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: operator mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/tmp_product is absorbed into DSP mul_32ns_32ns_64_5_1_U26/rgb2hsv_accel_mul_32ns_32ns_64_5_1_Multiplier_0_U/buff2_reg.
+DSP Report: Generating DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg, operation Mode is: (C:0x800)+((D'+A'')*B2)'.
+DSP Report: register ret_8_reg_827_pp0_iter9_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register ret_8_reg_827_pp0_iter10_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/b_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register and_ln161_2_reg_865_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/m_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: register ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/ad_reg_reg is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/m is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: operator ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/ad is absorbed into DSP ama_addmuladd_13s_9s_17ns_13ns_30_4_1_U28/rgb2hsv_accel_ama_addmuladd_13s_9s_17ns_13ns_30_4_1_DSP48_1_U/p_reg_reg.
+DSP Report: Generating DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C:0x800)+(A2*B'')'.
+DSP Report: register mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_20s_8ns_13ns_20_4_1_U27/rgb2hsv_accel_mac_muladd_20s_8ns_13ns_20_4_1_DSP48_0_U/p_reg_reg.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10627 ; free virtual = 56527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+----------------+
+|Module Name                           | RTL Object                                                                                           | Depth x Width | Implemented As | 
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+----------------+
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | xf_cv_icvSaturate8u_cv1_U/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom_U/q2_reg | 1024x8        | Block RAM      | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | sub_ln1346_reg_704_reg                                                                               | 1024x8        | Block RAM      | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | ret_reg_758_reg                                                                                      | 1024x8        | Block RAM      | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | xf_cv_icvSaturate8u_cv1_U/rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s_xf_cv_icvSaturate8u_cv1_rom_U/q0_reg | 1024x8        | Block RAM      | 
++--------------------------------------+------------------------------------------------------------------------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                           | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | (A''*B'')'               | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | (PCIN>>17)+(A''*B2)'     | 18     | 16     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | PCIN+(A''*B'')'          | 18     | 16     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | (PCIN>>17)+(A''*B'')'    | 16     | 16     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | (C:0x800)+((D'+A'')*B2)' | 9      | 18     | 13     | 13     | 30     | 2    | 1    | 0    | 1    | 1     | 1    | 1    | 
+|rgb2hsv_accel_rgb2hsv_9_1080_1920_1_s | (C:0x800)+(A2*B'')'      | 20     | 18     | 13     | -      | 20     | 1    | 2    | 0    | -    | -     | 1    | 1    | 
++--------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10100 ; free virtual = 56004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10752 ; free virtual = 56656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10885 ; free virtual = 56789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10492 ; free virtual = 56397
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10491 ; free virtual = 56396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10481 ; free virtual = 56386
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10480 ; free virtual = 56385
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10474 ; free virtual = 56379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10472 ; free virtual = 56377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                                                           | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/b_V_reg_697_pp0_iter5_reg_reg[7]                          | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/xf_cv_icvSaturate8u_cv1_load_reg_727_pp0_iter7_reg_reg[7] | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/r_V_reg_685_pp0_iter4_reg_reg[7]                          | 3      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/icmp_ln128_reg_681_pp0_iter12_reg_reg[0]                  | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/add_ln213_1_reg_810_pp0_iter14_reg_reg[7]                 | 6      | 8     | NO           | NO                 | NO                | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/zext_ln123_reg_714_pp0_iter7_reg_reg[7]                   | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/g_V_reg_691_pp0_iter7_reg_reg[7]                          | 5      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|rgb2hsv_accel | rgb2hsv_9_1080_1920_1_U0/zext_ln1347_reg_721_pp0_iter7_reg_reg[7]                  | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
++--------------+------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3] | 32     | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[3] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   102|
+|2     |DSP48E1  |     6|
+|7     |LUT1     |    50|
+|8     |LUT2     |   281|
+|9     |LUT3     |   243|
+|10    |LUT4     |   280|
+|11    |LUT5     |   145|
+|12    |LUT6     |   261|
+|13    |MUXF7    |    41|
+|14    |MUXF8    |    19|
+|15    |RAMB18E1 |     2|
+|16    |SRL16E   |   121|
+|17    |FDRE     |  1684|
+|18    |FDSE     |    28|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10472 ; free virtual = 56377
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 2562.789 ; gain = 5.816 ; free physical = 10529 ; free virtual = 56434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2562.789 ; gain = 167.629 ; free physical = 10529 ; free virtual = 56434
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2562.789 ; gain = 0.000 ; free physical = 10590 ; free virtual = 56495
+INFO: [Netlist 29-17] Analyzing 170 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2592.844 ; gain = 0.000 ; free physical = 10597 ; free virtual = 56502
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:40 . Memory (MB): peak = 2592.844 ; gain = 197.805 ; free physical = 10884 ; free virtual = 56788
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/video_cp_rgb2hsv_accel_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_cp_rgb2hsv_accel_0, cache-ID = a48692cfc7e13328
+INFO: [Coretcl 2-1174] Renamed 43 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_rgb2hsv_accel_0_synth_1/video_cp_rgb2hsv_accel_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file video_cp_rgb2hsv_accel_0_utilization_synth.rpt -pb video_cp_rgb2hsv_accel_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:32:26 2022...

@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-367,-84",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port s_axi_control0 -pg 1 -lvl 0 -x -40 -y 60 -defaultsOSRD
+preplace port s_axi_control1 -pg 1 -lvl 0 -x -40 -y 220 -defaultsOSRD
+preplace port stream_in0 -pg 1 -lvl 0 -x -40 -y 80 -defaultsOSRD
+preplace port stream_in1 -pg 1 -lvl 0 -x -40 -y 240 -defaultsOSRD
+preplace port stream_out0 -pg 1 -lvl 2 -x 410 -y 80 -defaultsOSRD
+preplace port stream_out1 -pg 1 -lvl 2 -x 410 -y 240 -defaultsOSRD
+preplace port clk_142M -pg 1 -lvl 0 -x -40 -y 100 -defaultsOSRD
+preplace port periph_resetn_clk142M -pg 1 -lvl 0 -x -40 -y 120 -defaultsOSRD
+preplace inst dilate_accel2 -pg 1 -lvl 1 -x 200 -y 250 -defaultsOSRD
+preplace inst dilate_accel1 -pg 1 -lvl 1 -x 200 -y 90 -defaultsOSRD
+preplace netloc clk_142M_1 1 0 1 -10 100n
+preplace netloc periph_resetn_clk142M_1 1 0 1 -20 120n
+preplace netloc erode_accel_stream_out 1 1 1 NJ 240
+preplace netloc s_axi_control1_1 1 0 1 NJ 220
+preplace netloc stream_in1_1 1 0 1 NJ 240
+preplace netloc dilate_accel1_stream_out 1 1 1 N 80
+preplace netloc s_axi_control0_1 1 0 1 N 60
+preplace netloc stream_in0_1 1 0 1 N 80
+levelinfo -pg 1 -40 200 410
+pagesize -pg 1 -db -bbox -sgen -260 -80 550 530
+"
+}
+{
+   "da_clkrst_cnt":"1"
+}

@@ -1,0 +1,29 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-350,-98",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port s_axi_control0 -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace port s_axi_control1 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port stream_in0 -pg 1 -lvl 0 -x 0 -y 70 -defaultsOSRD
+preplace port stream_in1 -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
+preplace port stream_out0 -pg 1 -lvl 2 -x 390 -y 70 -defaultsOSRD
+preplace port stream_out1 -pg 1 -lvl 2 -x 390 -y 230 -defaultsOSRD
+preplace port periph_resetn_clk142M -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port clk_142M -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace inst fast_accel -pg 1 -lvl 1 -x 200 -y 80 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 1 -x 200 -y 230 -defaultsOSRD
+preplace netloc clk_142M_1 1 0 1 30 90n
+preplace netloc periph_resetn_clk142M_1 1 0 1 20 110n
+preplace netloc stream_in1_1 1 0 1 NJ 210
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 NJ 230
+preplace netloc fast_accel_stream_out 1 1 1 NJ 70
+preplace netloc s_axi_control0_1 1 0 1 NJ 50
+preplace netloc stream_in0_1 1 0 1 NJ 70
+levelinfo -pg 1 0 200 390
+pagesize -pg 1 -db -bbox -sgen -200 0 520 300
+"
+}
+

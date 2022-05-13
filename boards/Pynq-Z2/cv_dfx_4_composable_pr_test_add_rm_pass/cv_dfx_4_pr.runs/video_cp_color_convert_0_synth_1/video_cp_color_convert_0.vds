@@ -1,0 +1,501 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Wed Mar 16 11:32:30 2022
+# Process ID: 2321980
+# Current directory: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1
+# Command line: vivado -log video_cp_color_convert_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_cp_color_convert_0.tcl
+# Log file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/video_cp_color_convert_0.vds
+# Journal file: /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source video_cp_color_convert_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/ip/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top video_cp_color_convert_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2322074
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2396.102 ; gain = 0.000 ; free physical = 8659 ; free virtual = 54556
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'video_cp_color_convert_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_color_convert_0/synth/video_cp_color_convert_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'color_convert' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert.v:12]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+	Parameter C_S_AXI_CONTROL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CONTROL_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'color_convert_control_s_axi' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_control_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_C1_0_DATA_0 bound to: 7'b0010000 
+	Parameter ADDR_C1_0_CTRL bound to: 7'b0010100 
+	Parameter ADDR_C1_1_DATA_0 bound to: 7'b0011000 
+	Parameter ADDR_C1_1_CTRL bound to: 7'b0011100 
+	Parameter ADDR_C1_2_DATA_0 bound to: 7'b0100000 
+	Parameter ADDR_C1_2_CTRL bound to: 7'b0100100 
+	Parameter ADDR_C2_0_DATA_0 bound to: 7'b0101000 
+	Parameter ADDR_C2_0_CTRL bound to: 7'b0101100 
+	Parameter ADDR_C2_1_DATA_0 bound to: 7'b0110000 
+	Parameter ADDR_C2_1_CTRL bound to: 7'b0110100 
+	Parameter ADDR_C2_2_DATA_0 bound to: 7'b0111000 
+	Parameter ADDR_C2_2_CTRL bound to: 7'b0111100 
+	Parameter ADDR_C3_0_DATA_0 bound to: 7'b1000000 
+	Parameter ADDR_C3_0_CTRL bound to: 7'b1000100 
+	Parameter ADDR_C3_1_DATA_0 bound to: 7'b1001000 
+	Parameter ADDR_C3_1_CTRL bound to: 7'b1001100 
+	Parameter ADDR_C3_2_DATA_0 bound to: 7'b1010000 
+	Parameter ADDR_C3_2_CTRL bound to: 7'b1010100 
+	Parameter ADDR_BIAS_0_DATA_0 bound to: 7'b1011000 
+	Parameter ADDR_BIAS_0_CTRL bound to: 7'b1011100 
+	Parameter ADDR_BIAS_1_DATA_0 bound to: 7'b1100000 
+	Parameter ADDR_BIAS_1_CTRL bound to: 7'b1100100 
+	Parameter ADDR_BIAS_2_DATA_0 bound to: 7'b1101000 
+	Parameter ADDR_BIAS_2_CTRL bound to: 7'b1101100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_control_s_axi.v:250]
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_control_s_axi' (1#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_control_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'color_convert_mul_10s_8ns_18_1_1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_mul_10s_8ns_18_1_1.v:16]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 18 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'color_convert_mul_10s_8ns_18_1_1_Multiplier_0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_mul_10s_8ns_18_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_mul_10s_8ns_18_1_1_Multiplier_0' (2#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_mul_10s_8ns_18_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_mul_10s_8ns_18_1_1' (3#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_mul_10s_8ns_18_1_1.v:16]
+INFO: [Synth 8-6157] synthesizing module 'color_convert_regslice_both' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_regslice_both' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'color_convert_regslice_both__parameterized0' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_regslice_both__parameterized0' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'color_convert_regslice_both__parameterized1' [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'color_convert_regslice_both__parameterized1' (4#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'color_convert' (5#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ipshared/69d8/hdl/verilog/color_convert.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'video_cp_color_convert_0' (6#1) [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_color_convert_0/synth/video_cp_color_convert_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2396.102 ; gain = 0.000 ; free physical = 10736 ; free virtual = 56634
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.102 ; gain = 0.000 ; free physical = 10738 ; free virtual = 56636
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2396.102 ; gain = 0.000 ; free physical = 10738 ; free virtual = 56636
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2396.102 ; gain = 0.000 ; free physical = 10720 ; free virtual = 56618
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_color_convert_0/constraints/color_convert_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.gen/sources_1/bd/video_cp/ip/video_cp_color_convert_0/constraints/color_convert_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2547.824 ; gain = 0.000 ; free physical = 10462 ; free virtual = 56361
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2547.824 ; gain = 0.000 ; free physical = 10455 ; free virtual = 56354
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10469 ; free virtual = 56374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10469 ; free virtual = 56374
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10468 ; free virtual = 56372
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'color_convert_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'color_convert_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'color_convert_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'color_convert_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10366 ; free virtual = 56272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   20 Bit       Adders := 3     
+	   2 Input   19 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               20 Bit    Registers := 3     
+	               19 Bit    Registers := 3     
+	               18 Bit    Registers := 9     
+	               16 Bit    Registers := 12    
+	               10 Bit    Registers := 33    
+	                8 Bit    Registers := 22    
+	                7 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 16    
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 48    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+	   2 Input    7 Bit        Muxes := 3     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 29    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP r_V_5_reg_1289_reg, operation Mode is: A''*B''.
+DSP Report: register r_V_5_reg_1289_reg is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: register c1_2_read_reg_1154_reg is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: register c1_2_read_reg_1154_pp0_iter1_reg_reg is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_5_reg_1289_reg.
+DSP Report: Generating DSP r_V_reg_1219_reg, operation Mode is: (A2*B2)'.
+DSP Report: register r_V_reg_1219_reg is absorbed into DSP r_V_reg_1219_reg.
+DSP Report: register c1_0_read_reg_1164_reg is absorbed into DSP r_V_reg_1219_reg.
+DSP Report: register r_V_reg_1219_reg is absorbed into DSP r_V_reg_1219_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U1/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_reg_1219_reg.
+DSP Report: Generating DSP mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p, operation Mode is: A2*B2.
+DSP Report: register mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: register c1_1_read_reg_1159_reg is absorbed into DSP mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: operator mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U2/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: Generating DSP trunc_ln1192_2_reg_1304_reg, operation Mode is: A''*B''.
+DSP Report: register trunc_ln1192_2_reg_1304_reg is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: register c1_2_read_reg_1154_reg is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: register c1_2_read_reg_1154_pp0_iter1_reg_reg is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_2_reg_1304_reg.
+DSP Report: Generating DSP add_ln1192_1_fu_399_p2, operation Mode is: C'+(A2*B2)'.
+DSP Report: register add_ln1192_1_fu_399_p2 is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: register c1_0_read_reg_1164_reg is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: register trunc_ln1115_1_reg_1234_reg is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: register trunc_ln1115_reg_1224_reg is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U1/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: operator add_ln1192_1_fu_399_p2 is absorbed into DSP add_ln1192_1_fu_399_p2.
+DSP Report: Generating DSP add_ln1192_2_fu_547_p2, operation Mode is: C'+(ACIN2*B'')'.
+DSP Report: register add_ln1192_2_fu_547_p2 is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: register add_ln1192_2_fu_547_p2 is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: register trunc_ln1192_1_reg_1299_reg is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: register c1_2_read_reg_1154_pp0_iter1_reg_reg is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: register trunc_ln1192_reg_1294_reg is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U7/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: operator add_ln1192_2_fu_547_p2 is absorbed into DSP add_ln1192_2_fu_547_p2.
+DSP Report: Generating DSP r_V_8_reg_1319_reg, operation Mode is: A''*B''.
+DSP Report: register r_V_8_reg_1319_reg is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: register c2_2_read_reg_1139_reg is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: register c2_2_read_reg_1139_pp0_iter1_reg_reg is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_8_reg_1319_reg.
+DSP Report: Generating DSP r_V_6_reg_1239_reg, operation Mode is: (A2*B2)'.
+DSP Report: register r_V_6_reg_1239_reg is absorbed into DSP r_V_6_reg_1239_reg.
+DSP Report: register c2_0_read_reg_1149_reg is absorbed into DSP r_V_6_reg_1239_reg.
+DSP Report: register r_V_6_reg_1239_reg is absorbed into DSP r_V_6_reg_1239_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U3/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_6_reg_1239_reg.
+DSP Report: Generating DSP mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p, operation Mode is: A2*B2.
+DSP Report: register mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: register c2_1_read_reg_1144_reg is absorbed into DSP mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: operator mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U4/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: Generating DSP trunc_ln1192_7_reg_1334_reg, operation Mode is: A''*B''.
+DSP Report: register trunc_ln1192_7_reg_1334_reg is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: register c2_2_read_reg_1139_reg is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: register c2_2_read_reg_1139_pp0_iter1_reg_reg is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_7_reg_1334_reg.
+DSP Report: Generating DSP add_ln1192_10_fu_439_p2, operation Mode is: C'+(A2*B2)'.
+DSP Report: register add_ln1192_10_fu_439_p2 is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: register c2_0_read_reg_1149_reg is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: register trunc_ln1115_3_reg_1254_reg is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: register trunc_ln1115_2_reg_1244_reg is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U3/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: operator add_ln1192_10_fu_439_p2 is absorbed into DSP add_ln1192_10_fu_439_p2.
+DSP Report: Generating DSP add_ln1192_8_fu_643_p2, operation Mode is: C'+(ACIN2*B'')'.
+DSP Report: register add_ln1192_8_fu_643_p2 is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: register add_ln1192_8_fu_643_p2 is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: register trunc_ln1192_6_reg_1329_reg is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: register c2_2_read_reg_1139_pp0_iter1_reg_reg is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: register trunc_ln1192_5_reg_1324_reg is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U8/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: operator add_ln1192_8_fu_643_p2 is absorbed into DSP add_ln1192_8_fu_643_p2.
+DSP Report: Generating DSP r_V_11_reg_1349_reg, operation Mode is: A''*B''.
+DSP Report: register r_V_11_reg_1349_reg is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: register c3_2_read_reg_1124_reg is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: register c3_2_read_reg_1124_pp0_iter1_reg_reg is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_11_reg_1349_reg.
+DSP Report: Generating DSP r_V_9_reg_1259_reg, operation Mode is: (A2*B2)'.
+DSP Report: register r_V_9_reg_1259_reg is absorbed into DSP r_V_9_reg_1259_reg.
+DSP Report: register c3_0_read_reg_1134_reg is absorbed into DSP r_V_9_reg_1259_reg.
+DSP Report: register r_V_9_reg_1259_reg is absorbed into DSP r_V_9_reg_1259_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U5/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP r_V_9_reg_1259_reg.
+DSP Report: Generating DSP mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p, operation Mode is: A2*B2.
+DSP Report: register mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: register c3_1_read_reg_1129_reg is absorbed into DSP mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: operator mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP mul_10s_8ns_18_1_1_U6/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p.
+DSP Report: Generating DSP trunc_ln1192_12_reg_1364_reg, operation Mode is: A''*B''.
+DSP Report: register trunc_ln1192_12_reg_1364_reg is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: register mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: register c3_2_read_reg_1124_reg is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: register c3_2_read_reg_1124_pp0_iter1_reg_reg is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: operator mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP trunc_ln1192_12_reg_1364_reg.
+DSP Report: Generating DSP add_ln1192_17_fu_476_p2, operation Mode is: C'+(A2*B2)'.
+DSP Report: register add_ln1192_17_fu_476_p2 is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: register c3_0_read_reg_1134_reg is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: register trunc_ln1115_5_reg_1274_reg is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: register trunc_ln1115_4_reg_1264_reg is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U5/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: operator add_ln1192_17_fu_476_p2 is absorbed into DSP add_ln1192_17_fu_476_p2.
+DSP Report: Generating DSP add_ln1192_14_fu_739_p2, operation Mode is: C'+(ACIN2*B'')'.
+DSP Report: register add_ln1192_14_fu_739_p2 is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: register add_ln1192_14_fu_739_p2 is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: register trunc_ln1192_11_reg_1359_reg is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: register c3_2_read_reg_1124_pp0_iter1_reg_reg is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: register trunc_ln1192_10_reg_1354_reg is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: operator mul_10s_8ns_18_1_1_U9/color_convert_mul_10s_8ns_18_1_1_Multiplier_0_U/p is absorbed into DSP add_ln1192_14_fu_739_p2.
+DSP Report: operator add_ln1192_14_fu_739_p2 is absorbed into DSP add_ln1192_14_fu_739_p2.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 9248 ; free virtual = 55158
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | (A2*B2)'        | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|color_convert | A2*B2           | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | C'+(A2*B2)'     | 10     | 9      | 16     | -      | 16     | 1    | 1    | 1    | -    | -     | 1    | 0    | 
+|color_convert | C'+(ACIN2*B'')' | 10     | 9      | 8      | -      | 8      | 1    | 2    | 1    | -    | -     | 1    | 0    | 
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | (A2*B2)'        | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|color_convert | A2*B2           | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | C'+(A2*B2)'     | 10     | 9      | 16     | -      | 16     | 1    | 1    | 1    | -    | -     | 1    | 0    | 
+|color_convert | C'+(ACIN2*B'')' | 10     | 9      | 8      | -      | 8      | 1    | 2    | 1    | -    | -     | 1    | 0    | 
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | (A2*B2)'        | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|color_convert | A2*B2           | 10     | 9      | -      | -      | 19     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|color_convert | A''*B''         | 10     | 9      | -      | -      | 19     | 2    | 2    | -    | -    | -     | 1    | 0    | 
+|color_convert | C'+(A2*B2)'     | 10     | 9      | 16     | -      | 16     | 1    | 1    | 1    | -    | -     | 1    | 0    | 
+|color_convert | C'+(ACIN2*B'')' | 10     | 9      | 8      | -      | 8      | 1    | 2    | 1    | -    | -     | 1    | 0    | 
++--------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10006 ; free virtual = 55915
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 9982 ; free virtual = 55891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10014 ; free virtual = 55923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10902 ; free virtual = 56816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10909 ; free virtual = 56822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10906 ; free virtual = 56820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10906 ; free virtual = 56820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10905 ; free virtual = 56819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10905 ; free virtual = 56819
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name   | RTL Name                                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|color_convert | bias_0_read_reg_1119_pp0_iter2_reg_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | bias_1_read_reg_1114_pp0_iter2_reg_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | bias_2_read_reg_1109_pp0_iter2_reg_reg[9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|color_convert | tmp_i1_keep_reg_1169_pp0_iter3_reg_reg[2] | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|color_convert | tmp_i1_strb_reg_1174_pp0_iter3_reg_reg[2] | 4      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|color_convert | tmp_i1_user_reg_1179_pp0_iter3_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|color_convert | tmp_i1_last_reg_1184_pp0_iter3_reg_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++--------------+-------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    42|
+|2     |DSP48E1 |    18|
+|6     |LUT1    |     4|
+|7     |LUT2    |   104|
+|8     |LUT3    |   261|
+|9     |LUT4    |    80|
+|10    |LUT5    |    73|
+|11    |LUT6    |    74|
+|12    |SRL16E  |    38|
+|13    |FDRE    |   548|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10905 ; free virtual = 56819
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2547.824 ; gain = 0.000 ; free physical = 10953 ; free virtual = 56867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2547.824 ; gain = 151.723 ; free physical = 10959 ; free virtual = 56873
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2547.824 ; gain = 0.000 ; free physical = 11026 ; free virtual = 56940
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2580.754 ; gain = 0.000 ; free physical = 10956 ; free virtual = 56869
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 2580.754 ; gain = 184.773 ; free physical = 11124 ; free virtual = 57038
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/video_cp_color_convert_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_cp_color_convert_0, cache-ID = 54c2974b38392f96
+INFO: [Coretcl 2-1174] Renamed 18 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/willychiang/Desktop/PYNQ_Composable_Pipeline/boards/Pynq-Z2/cv_dfx_4_pr/cv_dfx_4_pr.runs/video_cp_color_convert_0_synth_1/video_cp_color_convert_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file video_cp_color_convert_0_utilization_synth.rpt -pb video_cp_color_convert_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 16 11:33:14 2022...

@@ -1,0 +1,97 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.468142",
+   "Default View_TopLeft":"-686,-11",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDC -pg 1 -lvl 3 -x 920 -y 100 -defaultsOSRD
+preplace port M01_AXIS -pg 1 -lvl 3 -x 920 -y 480 -defaultsOSRD
+preplace port M_AXI -pg 1 -lvl 3 -x 920 -y 840 -defaultsOSRD
+preplace port M_AXIS01 -pg 1 -lvl 3 -x 920 -y 120 -defaultsOSRD
+preplace port S00_AXILite -pg 1 -lvl 0 -x -20 -y 50 -defaultsOSRD
+preplace port S00_AXILite1 -pg 1 -lvl 0 -x -20 -y 410 -defaultsOSRD
+preplace port S00_AXIS -pg 1 -lvl 0 -x -20 -y 150 -defaultsOSRD
+preplace port S01_AXILite -pg 1 -lvl 0 -x -20 -y 70 -defaultsOSRD
+preplace port S01_AXILite1 -pg 1 -lvl 0 -x -20 -y 430 -defaultsOSRD
+preplace port S01_AXIS -pg 1 -lvl 0 -x -20 -y 530 -defaultsOSRD
+preplace port S02_AXILite -pg 1 -lvl 0 -x -20 -y 90 -defaultsOSRD
+preplace port S02_AXILite1 -pg 1 -lvl 0 -x -20 -y 450 -defaultsOSRD
+preplace port S03_AXILite -pg 1 -lvl 0 -x -20 -y 110 -defaultsOSRD
+preplace port S03_AXILite1 -pg 1 -lvl 0 -x -20 -y 470 -defaultsOSRD
+preplace port S04_AXILite -pg 1 -lvl 0 -x -20 -y 490 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -lvl 0 -x -20 -y 760 -defaultsOSRD
+preplace port TMDS_in -pg 1 -lvl 0 -x -20 -y 130 -defaultsOSRD
+preplace port hdmi_tx -pg 1 -lvl 3 -x 920 -y 500 -defaultsOSRD
+preplace port S02_AXI -pg 1 -lvl 0 -x -20 -y 680 -defaultsOSRD
+preplace port S03_AXI -pg 1 -lvl 0 -x -20 -y 960 -defaultsOSRD
+preplace port FCLK_RESET0_N -pg 1 -lvl 0 -x -20 -y 290 -defaultsOSRD
+preplace port clk_100M -pg 1 -lvl 0 -x -20 -y 780 -defaultsOSRD
+preplace port clk_142M -pg 1 -lvl 0 -x -20 -y 800 -defaultsOSRD
+preplace port clk_200M -pg 1 -lvl 0 -x -20 -y 190 -defaultsOSRD
+preplace port hdmi_in_hpd_irq -pg 1 -lvl 3 -x 920 -y 220 -defaultsOSRD
+preplace port hdmi_out_hpd_irq -pg 1 -lvl 3 -x 920 -y 540 -defaultsOSRD
+preplace port interconnect_resetn_clk142M -pg 1 -lvl 0 -x -20 -y 700 -defaultsOSRD
+preplace port mm2s_introut -pg 1 -lvl 3 -x 920 -y 980 -defaultsOSRD
+preplace port periph_reset_clk100M -pg 1 -lvl 0 -x -20 -y 630 -defaultsOSRD
+preplace port periph_resetn_clk100M -pg 1 -lvl 0 -x -20 -y 820 -defaultsOSRD
+preplace port periph_resetn_clk142M -pg 1 -lvl 0 -x -20 -y 600 -defaultsOSRD
+preplace port s2mm_introut -pg 1 -lvl 3 -x 920 -y 1000 -defaultsOSRD
+preplace port vtc_in_irq -pg 1 -lvl 3 -x 920 -y 240 -defaultsOSRD
+preplace port vtc_out_irq -pg 1 -lvl 3 -x 920 -y 560 -defaultsOSRD
+preplace portBus hdmi_in_hpd -pg 1 -lvl 3 -x 920 -y 200 -defaultsOSRD
+preplace portBus hdmi_out_hpd -pg 1 -lvl 3 -x 920 -y 520 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 2 -x 690 -y 890 -defaultsOSRD
+preplace inst axi_vdma -pg 1 -lvl 1 -x 220 -y 830 -defaultsOSRD
+preplace inst hdmi_in -pg 1 -lvl 2 -x 690 -y 170 -defaultsOSRD
+preplace inst hdmi_out -pg 1 -lvl 2 -x 690 -y 520 -defaultsOSRD
+preplace inst proc_sys_reset_pixelclk -pg 1 -lvl 1 -x 220 -y 310 -defaultsOSRD
+preplace netloc ARESETN_2 1 0 2 NJ 700 410J
+preplace netloc Net 1 0 2 20 550 430
+preplace netloc Net1 1 0 2 0 590 440
+preplace netloc RefClk_1 1 0 2 NJ 190 470J
+preplace netloc aclk_1 1 0 2 10 690 480
+preplace netloc axi_gpio_video_gpio_io_o 1 2 1 NJ 200
+preplace netloc axi_vdma_mm2s_introut 1 1 2 450J 1100 880J
+preplace netloc axi_vdma_s2mm_introut 1 1 2 420J 1110 900J
+preplace netloc ext_reset_in_1 1 0 1 NJ 290
+preplace netloc hdmi_in_PixelClk 1 0 3 0 200 500J 340 890
+preplace netloc hdmi_in_aPixelClkLckd 1 0 3 30 210 450J 350 880
+preplace netloc hdmi_in_hdmi_in_hpd_irq 1 2 1 NJ 220
+preplace netloc hdmi_in_vtc_in_irq 1 2 1 NJ 240
+preplace netloc hdmi_out_hdmi_out_hpd_irq 1 2 1 NJ 540
+preplace netloc hdmi_out_hpd_video_gpio_io_o 1 2 1 NJ 520
+preplace netloc hdmi_out_vtc_out_irq 1 2 1 NJ 560
+preplace netloc rst_1 1 0 2 NJ 630 NJ
+preplace netloc rst_ps7_0_fclk1_peripheral_aresetn 1 0 2 NJ 600 490
+preplace netloc vid_io_in_reset_1 1 1 1 420 290n
+preplace netloc vtc_in_resetn_1 1 1 1 410 270n
+preplace netloc S02_AXI_1 1 0 2 NJ 680 420J
+preplace netloc axi_mem_intercon_M00_AXI 1 2 1 890J 840n
+preplace netloc Conn16 1 0 2 NJ 150 NJ
+preplace netloc Conn2 1 0 2 NJ 50 NJ
+preplace netloc Conn3 1 2 1 NJ 500
+preplace netloc Conn5 1 0 2 NJ 90 NJ
+preplace netloc Conn6 1 0 2 NJ 110 NJ
+preplace netloc Conn8 1 0 2 NJ 430 NJ
+preplace netloc Conn9 1 0 2 NJ 450 NJ
+preplace netloc Conn4 1 0 2 NJ 70 NJ
+preplace netloc Conn7 1 0 2 NJ 410 NJ
+preplace netloc Conn10 1 0 2 NJ 470 NJ
+preplace netloc Conn17 1 2 1 NJ 480
+preplace netloc TMDS_1 1 0 2 NJ 130 NJ
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 1 470 760n
+preplace netloc in_pixelformat_M00_AXIS 1 0 3 30 670 430J 680 900
+preplace netloc Conn1 1 0 1 NJ 760
+preplace netloc Conn11 1 0 2 NJ 490 NJ
+preplace netloc Conn18 1 2 1 NJ 120
+preplace netloc Conn19 1 0 2 NJ 530 NJ
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 1 1 450 510n
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 1 1 460 740n
+preplace netloc frontend_DDC 1 2 1 NJ 100
+preplace netloc S03_AXI_1 1 0 2 NJ 960 430J
+levelinfo -pg 1 -20 220 690 920
+pagesize -pg 1 -db -bbox -sgen -280 -10 1110 1120
+"
+}
+0
